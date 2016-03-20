@@ -77,11 +77,11 @@ li:nth-child(odd) a:focus {
     color: #666; /* Gray */
     font-weight: 100;
     line-height: 1.1;    
+    margin: 5px 0 5px 0;
 }
 
 .h2 {
     font-size: 54px;
-/*     margin-bottom: 60px; */
 }
 .h3 {
     font-size: 28px;
@@ -163,11 +163,16 @@ li:nth-child(odd) a:focus {
 }
 
 .menu {
+    cursor: pointer;
     float: right;
     margin-right: 30px;
     -webkit-transform: translateY(20px)); /* Chrome, Safari, Opera */
     -ms-transform: translateY(20px); /* IE9 */
     transform: translateY(20px);
+}
+
+#navTrigger {
+    display: none;
 }
 
 .nav ul {
@@ -212,8 +217,8 @@ li:nth-child(odd) a:focus {
         z-index: 100;
         top: 0;
         left: 0;
-        visibility: visible;
         -webkit-transition: all 0.5s); /* Chrome, Safari, Opera */
+        visibility: hidden;
         transition: all 0.5s;
         -webkit-transform: translateX(-100%)); /* Chrome, Safari, Opera */
         -ms-transform: translateX(-100%); /* IE9 */
@@ -248,6 +253,14 @@ li:nth-child(odd) a:focus {
         -webkit-transform: translateX(0)); /* Chrome, Safari, Opera */
         -ms-transform: translateX(0); /* IE9 */
         transform: translateX(0);    
+    }
+
+    /* CSS Magic - Open the Mobile Navigation when the hidden checkbox is checked */
+    #navTrigger:checked + nav {
+        visibility: visible;
+        -webkit-transform: translateX(0); /* Chrome, Safari, Opera */
+        -ms-transform: translateX(0); /* IE9 */
+        transform: translateX(0); 
     }
 }
 
@@ -288,6 +301,13 @@ li:nth-child(odd) a:focus {
 }
 
 
+/*  =============================================================================
+    COMMUNITY PAGE STYLES  
+    ============================================================================= */
+
+blockquote footer cite {
+    font-weight: 300;
+}
 
 
 

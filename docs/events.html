@@ -32,9 +32,13 @@
         	<!-- Logo -->
         	<h1 class="logo"><a href="index.html">Women Techmakers Hamburg</a></h1>
         	
-        	<!-- Mobile Navigation Button -->
-            <a href="#nav" class="menu visible-mobile">Menu</a>
+            <!-- Trigger for opening the Mobile Navigation -->
+            <!-- Adopted from Sven Kunz: https://tech.zalando.com/blog/hidden-navigation-onclick-without-javascript/ -->
+            <label for="navTrigger" class="menu visible-mobile">Menu</label>
             
+            <!-- Hidden checkbox to trigger the navigation on mobile -->
+            <input id="navTrigger" type="checkbox">
+        
         	<!-- Navigation -->
             <nav id="nav" class="nav">
                 <ul>
