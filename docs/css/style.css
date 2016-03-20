@@ -107,10 +107,6 @@ li:nth-child(even) a:focus {
     HELPER CLASSES  
     ============================================================================= */
 
-.trans-1s-all {
-/*     transition: all 0.2s linear; */
-}
-
 .visible-mobile {
     display: none !important;
 }
