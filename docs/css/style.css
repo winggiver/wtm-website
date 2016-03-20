@@ -35,6 +35,11 @@ body {
     line-height: 1.5;
 }
 
+figure {
+    margin: 0;
+    padding: 0;
+}
+
 img {
     border: 0; /* Remove border from img when inside 'a' element in IE 8-10. */
     vertical-align: middle;
@@ -101,6 +106,7 @@ li:nth-child(even) a:focus {
         font-size: 44px;
     }
 }
+
 
 
 /*  =============================================================================
