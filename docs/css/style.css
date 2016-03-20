@@ -1,13 +1,13 @@
 /*! WOMEN TECHMAKERS HAMBURG: This is our custom CSS. */
 
-/* Color Palette Hex Values: 
-White: #fff;
-Light Black: #777;
-Black: #000;
-Green: #1ce9b6;
-Dark Green: #01bfa5;
-Blue: #4fc3f7;
-Dark Blue: #4285f4;
+/* WTH Color Palette: Hex Values - RGB Values: 
+White: #fff - rgb(255, 255, 255);
+Gray: #666 - rgb(102, 102, 102);
+Black: #000 - rgb(0, 0, 0);
+Green: #1CE9B6 - rgb(28, 233, 182);
+Dark Green: #00BFA5 - rgb(0, 191, 165);
+Blue: #4FC3F7 - rgb(79, 195, 247);
+Dark Blue: #4285F4 - rgb(66, 133, 244);
 */
 
 /*  =============================================================================
@@ -31,6 +31,7 @@ body {
     color: #000;  /* Black */
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 16px;
+    font-weight: 300;
     line-height: 1.5;
 }
 
@@ -40,28 +41,56 @@ img {
     outline: none;
 }
 
+
+
+/*  =============================================================================
+    UTILITY  
+    ============================================================================= */
+
 a {
-    border-bottom: 1px solid #777;
-    color: #777;  /* Light Black */
+    border-bottom: 1px solid rgba(102, 102, 102, 0.3); /* Gray */
+    color: #666;  /* Gray */
     outline: 0;
     text-decoration: none;
-    -webkit-transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear); /* Chrome, Safari, Opera */
     transition: all 0.1s linear;
 }
 
 a:hover,
 a:focus {
-    border: 0;
-    color: #1ce9b6; /* Dark Green */
+    border-color: rgba(28, 233, 182, 0.2); /* Green with 20% alpha opacity */
+}
+
+a:hover,
+a:focus,
+li:nth-child(odd) a:hover,
+li:nth-child(odd) a:focus {
+    color: #00BFA5; /* Dark Green */
+}
+
+li:nth-child(even) a:hover,
+li:nth-child(odd) a:focus {
+    color: #1CE9B6; /* Green */
 }
 
 .h1, .h2, .h3, .h4 {
-    font-weight: 300;
+    color: #666; /* Gray */
+    font-weight: 100;
     line-height: 1.1;    
 }
 
 .h2 {
     font-size: 54px;
+/*     margin-bottom: 60px; */
+}
+.h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -110,41 +139,41 @@ a:focus {
 }
 
 .logo a {
-    width: 185px;
+    width: 189px;
     height: 60px;
-    background-image: url("../img/logos.png");
-    background-position: 0 4px;
+    background-image: url("../img/wtm-logo.svg");
+    background-position: 0 0;
     background-repeat: no-repeat;
+    background-size: 189px 60px;
     border: 0;
     display: inline-block;
     float: left;
     font: 0/0 a;
     margin-right: 20px;
-    -webkit-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    transform: scale(0.7);
     vertical-align: middle;
 }
 
-.logo a:hover {
-    background-position: 0 -60px;
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
+.logo a:hover,
+.logo a:focus {
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+    -webkit-transform: scale(0.9)); /* Chrome, Safari, Opera */
+    -ms-transform: scale(0.9); /* IE9 */
+    transform: scale(0.9);
 }
 
 .menu {
     float: right;
     margin-right: 30px;
-    -webkit-transform: translateY(20px);
-    -ms-transform: translateY(20px);
+    -webkit-transform: translateY(20px)); /* Chrome, Safari, Opera */
+    -ms-transform: translateY(20px); /* IE9 */
     transform: translateY(20px);
 }
 
 .nav ul {
     list-style-type: none;
-    -webkit-transform: translateY(16px);
-    -ms-transform: translateY(16px);
+    -webkit-transform: translateY(16px)); /* Chrome, Safari, Opera */
+    -ms-transform: translateY(16px); /* IE9 */
     transform: translateY(16px);
 }
 
@@ -163,11 +192,9 @@ a:focus {
     text-transform: uppercase;
 }
 
-.nav a:hover,
-.nav a:focus,
 .menu:hover,
 .menu:focus {
-    color: #01bfa5; /* Dark Green */
+        color: #4FC3F7; /* Blue */
 }
 
 .nav a.active {
@@ -186,19 +213,19 @@ a:focus {
         top: 0;
         left: 0;
         visibility: visible;
-        -webkit-transition: all 0.5s;
+        -webkit-transition: all 0.5s); /* Chrome, Safari, Opera */
         transition: all 0.5s;
-        -webkit-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%)); /* Chrome, Safari, Opera */
+        -ms-transform: translateX(-100%); /* IE9 */
         transform: translateX(-100%);
     }
     
     .nav ul {
         width: 95%;
         line-height: 20px;
-        margin: 70px 0 0 5px;
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
+        margin: 70px 0 0 13px;
+        -webkit-transform: translateY(0)); /* Chrome, Safari, Opera */
+        -ms-transform: translateY(0); /* IE9 */
         transform: translateY(0);
     }
     
@@ -213,13 +240,13 @@ a:focus {
     }
     
     .nav a.active {
-        color: #4fc3f7; /* Blue */
+        color: #4285F4; /* Dark Blue */
     }
     
     /* CSS Magic - Let's Open that Mobile Navigation */
     :target {
-        -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0)); /* Chrome, Safari, Opera */
+        -ms-transform: translateX(0); /* IE9 */
         transform: translateX(0);    
     }
 }
@@ -229,7 +256,12 @@ a:focus {
 /*  =============================================================================
     GENERAL STYLES  
     ============================================================================= */
-    
+
+.wrapper {
+    height: 100%;
+    padding: 0 25px;
+}    
+
 .main {
     height: 100%;
 }
@@ -241,13 +273,21 @@ a:focus {
     padding-top: 120px;
 }
 
-.sec--content .h2 {
-    padding: 0 25px;
-}
-
 .col {
     padding: 0 25px;
 }
+
+.sec--content .h2 {
+/*     padding: 0 25px; */
+}
+    
+@media only screen and (min-width: 769px) {
+    .sec--content .wrapper {
+        padding: 0 35px;
+    }
+}
+
+
 
 
 
@@ -273,19 +313,19 @@ a:focus {
     position: relative;
     top: 50%;
     left: 0;
-    -ms-transform: translateY(-40%);
+    -ms-transform: translateY(-40%); /* IE9 */
     transform: translateY(-40%);
     text-align: center;
 }
 
 .sec--hero__logo {
     display: inline-block;
-    padding-bottom: 18px;
+    padding-bottom: 30px;
 }
 
 .sec--hero .h2 {
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
     
@@ -302,9 +342,10 @@ a:focus {
     ============================================================================= */
 
 .footer {
-    border-top: 1px solid #777;;
-    color: #777;;
+    border-top: 1px solid rgba(102, 102, 102, 0.2); /* Gray with 20% alpha opacity */
+    color: #666; /* Gray */
     font-size: 13px;
-    padding: 12px;
+    margin-top: 60px;
+    padding: 12px 0;
     text-align: center;
 }

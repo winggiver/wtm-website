@@ -14,10 +14,10 @@
 
 /*  =============================================================================
     MEDIA QUERIES - BREAKPOINTS:
-    Remove margins as all go full width at 480 pixels
+    Remove margins as all go full width at 768 pixels
     ============================================================================= */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
 	.span_2_of_2 {
 		width: 100%; 
 	}
