@@ -157,7 +157,7 @@ li:nth-child(odd) a:focus {
 .logo a:focus {
     -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
     filter: grayscale(100%);
-    -webkit-transform: scale(0.9)); /* Chrome, Safari, Opera */
+    -webkit-transform: scale(0.9); /* Chrome, Safari, Opera */
     -ms-transform: scale(0.9); /* IE9 */
     transform: scale(0.9);
 }
@@ -166,7 +166,7 @@ li:nth-child(odd) a:focus {
     cursor: pointer;
     float: right;
     margin-right: 30px;
-    -webkit-transform: translateY(20px)); /* Chrome, Safari, Opera */
+    -webkit-transform: translateY(20px); /* Chrome, Safari, Opera */
     -ms-transform: translateY(20px); /* IE9 */
     transform: translateY(20px);
 }
@@ -177,7 +177,7 @@ li:nth-child(odd) a:focus {
 
 .nav ul {
     list-style-type: none;
-    -webkit-transform: translateY(16px)); /* Chrome, Safari, Opera */
+    -webkit-transform: translateY(16px); /* Chrome, Safari, Opera */
     -ms-transform: translateY(16px); /* IE9 */
     transform: translateY(16px);
 }
@@ -199,7 +199,7 @@ li:nth-child(odd) a:focus {
 
 .menu:hover,
 .menu:focus {
-        color: #4FC3F7; /* Blue */
+    color: #4FC3F7; /* Blue */
 }
 
 .nav a.active {
@@ -220,7 +220,7 @@ li:nth-child(odd) a:focus {
         -webkit-transition: all 0.5s); /* Chrome, Safari, Opera */
         visibility: hidden;
         transition: all 0.5s;
-        -webkit-transform: translateX(-100%)); /* Chrome, Safari, Opera */
+        -webkit-transform: translateX(-100%); /* Chrome, Safari, Opera */
         -ms-transform: translateX(-100%); /* IE9 */
         transform: translateX(-100%);
     }
@@ -229,7 +229,7 @@ li:nth-child(odd) a:focus {
         width: 95%;
         line-height: 20px;
         margin: 70px 0 0 13px;
-        -webkit-transform: translateY(0)); /* Chrome, Safari, Opera */
+        -webkit-transform: translateY(0); /* Chrome, Safari, Opera */
         -ms-transform: translateY(0); /* IE9 */
         transform: translateY(0);
     }
@@ -241,7 +241,7 @@ li:nth-child(odd) a:focus {
     .nav ul li a {
         font-size: 16px;
         display: block;
-        padding: 13px 15px 13px 15px;
+        padding: 13px 15px;
     }
     
     .nav a.active {
@@ -250,7 +250,7 @@ li:nth-child(odd) a:focus {
     
     /* CSS Magic - Let's Open that Mobile Navigation */
     :target {
-        -webkit-transform: translateX(0)); /* Chrome, Safari, Opera */
+        -webkit-transform: translateX(0); /* Chrome, Safari, Opera */
         -ms-transform: translateX(0); /* IE9 */
         transform: translateX(0);    
     }
@@ -289,10 +289,6 @@ li:nth-child(odd) a:focus {
 .col {
     padding: 0 25px;
 }
-
-.sec--content .h2 {
-/*     padding: 0 25px; */
-}
     
 @media only screen and (min-width: 769px) {
     .sec--content .wrapper {
@@ -301,11 +297,12 @@ li:nth-child(odd) a:focus {
 }
 
 
+
 /*  =============================================================================
     COMMUNITY PAGE STYLES  
     ============================================================================= */
 
-blockquote footer cite {
+.blockquote .cite {
     font-weight: 300;
 }
 
@@ -333,6 +330,7 @@ blockquote footer cite {
     position: relative;
     top: 50%;
     left: 0;
+    -webkit-transform: translateY(-40%); /* Chrome, Safari, Opera */
     -ms-transform: translateY(-40%); /* IE9 */
     transform: translateY(-40%);
     text-align: center;
