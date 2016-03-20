@@ -58,6 +58,7 @@ a:focus {
 .h1, .h2, .h3, .h4 {
     font-weight: 300;
     line-height: 1.1;    
+    margin: 5px 0 5px 0;
 }
 
 .h2 {
@@ -141,6 +142,10 @@ a:focus {
     transform: translateY(20px);
 }
 
+#navTrigger {
+    display: none;
+}
+
 .nav ul {
     list-style-type: none;
     -webkit-transform: translateY(16px);
@@ -185,7 +190,7 @@ a:focus {
         z-index: 100;
         top: 0;
         left: 0;
-        visibility: visible;
+        visibility: hidden;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
         -webkit-transform: translateX(-100%);
@@ -222,6 +227,14 @@ a:focus {
         -ms-transform: translateX(0);
         transform: translateX(0);    
     }
+
+    /* CSS Magic - Open the Mobile Navigation when the hidden checkbox is checked */
+    #navTrigger:checked + nav {
+        visibility: visible;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0); 
+    }
 }
 
 
@@ -250,6 +263,13 @@ a:focus {
 }
 
 
+/*  =============================================================================
+    COMMUNITY PAGE STYLES  
+    ============================================================================= */
+
+blockquote footer cite {
+    font-weight: 300;
+}
 
 /*  =============================================================================
     HERO SECTION  
