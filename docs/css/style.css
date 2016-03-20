@@ -304,6 +304,10 @@ li:nth-child(even) a:focus {
     color: #4FC3F7; /*  Blue */ 
 }
 
+.sec--content .h2 {
+    margin-bottom: 60px;
+}
+
 .col {
     padding: 0 25px;
 }
