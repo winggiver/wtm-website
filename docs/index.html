@@ -13,54 +13,52 @@
 	<!-- Responsive and mobile friendly stuff -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	
+	<!-- Google Font -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500' rel='stylesheet' type='text/css'>
+	
 	<!-- CSS Stylesheets -->
 	<link rel="stylesheet" href="css/normalize.css" media="all">
 	<link rel="stylesheet" href="css/col.css" media="all">
 	<link rel="stylesheet" href="css/2cols.css" media="all">
 	<link rel="stylesheet" href="css/3cols.css" media="all">
+	<link rel="stylesheet" href="css/style.css" media="all">
 </head>
 
 <body>
 	<header class="header">
     	<!-- Logo -->
-    	<h1 class="logo"><a href="/">Women Techmakers Hamburg</a></h1>
+    	<h1 class="logo"><a href="index.html">Women Techmakers Hamburg</a></h1>
     	
+    	<!-- Mobile Navigation Button -->
+        <a href="#nav" class="menu visible-mobile">Menu</a>
+        
     	<!-- Navigation -->
-        <nav>
+        <nav id="nav" class="nav">
             <ul>
-                <li><a href="/" class="active">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/resources.html">Resources</a></li>
-                <li><a href="/events.html">Events</a></li>
-                <li><a href="/community.html">Community</a></li>
-                <li><a href="/mentors.html">Mentors</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="mentors.html">Mentors</a></li>
             </ul>
         </nav>
 	</header>
         
-    <main>
-        <section>
-            
+    <main class="main">
+        <section class="sec--hero">
             <!-- Hero Container Starts -->
-            <div class="section group">
-                <div class="col span_1_of_2">
-                    <!-- Logo -->
-                    <img src="">
-                </div>
-
-                <div class="col span_1_of_2">
-                    <!-- Main Teeaser Text -->
-                    <h2>Women Techmakers Hamburg</h2>
-                </div>
+            <div class="sec--hero__section section">
+                 <!-- Background image via CSS by Simla K&uuml;&ccedil;&uuml;ksayan Talay -->
+                <img class="sec--hero__logo" src="img/wtm-logo.png" alt="Women Techmakers Logo">
+                <h2 class="h2">Women Techmakers Hamburg</h2>
             </div>
             <!-- Hero Container Ends -->
-            
         </section>
     </main>
-   
     
-	<footer>
-		<p>Women Techmakers Hamburg 2016</p>
+	<footer class="footer">
+		<p>&copy; 2016 Women Techmakers Hamburg.</p>
 	</footer>
 </body>
 
