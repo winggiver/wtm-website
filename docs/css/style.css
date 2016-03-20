@@ -53,8 +53,8 @@ a {
     color: #666;  /* Gray */
     outline: 0;
     text-decoration: none;
-    -webkit-transition: all 0.1s linear); /* Chrome, Safari, Opera */
-    transition: all 0.1s linear;
+    -webkit-transition: color 0.1s linear, border 0.2s linear; /* Chrome, Safari, Opera */
+    transition: color 0.1s linear, border 0.2s linear;
 }
 
 a:hover,
@@ -71,7 +71,7 @@ li:nth-child(odd) a:focus {
 }
 
 li:nth-child(even) a:hover,
-li:nth-child(odd) a:focus {
+li:nth-child(even) a:focus {
     color: #1CE9B6; /* Green */
 }
 
@@ -107,6 +107,10 @@ li:nth-child(odd) a:focus {
     HELPER CLASSES  
     ============================================================================= */
 
+.trans-1s-all {
+/*     transition: all 0.2s linear; */
+}
+
 .visible-mobile {
     display: none !important;
 }
@@ -123,7 +127,7 @@ li:nth-child(odd) a:focus {
     HEADER & NAVIGATION 
     ============================================================================= */
 
-/* LOGO AND .navIGATION */
+/* LOGO AND NAVIGATION */
 
 .header {
     width: 100%;
@@ -154,6 +158,8 @@ li:nth-child(odd) a:focus {
     font: 0/0 a;
     margin-right: 20px;
     vertical-align: middle;
+    -webkit-transition: transform 0.1s linear; /* Chrome, Safari, Opera */
+    transition: transform 0.1s linear;
 }
 
 .logo a:hover,
@@ -244,7 +250,7 @@ li:nth-child(odd) a:focus {
     .nav ul li a {
         font-size: 16px;
         display: block;
-        padding: 13px 15px;
+        padding: 13px 16px;
     }
     
     .nav a.active {
@@ -280,6 +286,22 @@ li:nth-child(odd) a:focus {
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 120px;
+}
+
+.sec--content ul {
+    list-style-type: square;    
+}
+
+.sec--content ul li {
+    margin-bottom: 10px;    
+}
+
+.sec--content ul li:nth-child(odd) {
+    color: #4285F4; /* Dark Blue */ 
+}
+
+.sec--content ul li:nth-child(even) {
+    color: #4FC3F7; /*  Blue */ 
 }
 
 .col {
