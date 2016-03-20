@@ -48,6 +48,7 @@ img {
     ============================================================================= */
 
 a {
+    border-color: #666; /* Gray */
     border-bottom: 1px solid rgba(102, 102, 102, 0.3); /* Gray */
     color: #666;  /* Gray */
     outline: 0;
@@ -58,6 +59,7 @@ a {
 
 a:hover,
 a:focus {
+    border-color: #1CE9B6; /* Green */
     border-color: rgba(28, 233, 182, 0.2); /* Green with 20% alpha opacity */
 }
 
@@ -83,6 +85,7 @@ li:nth-child(odd) a:focus {
 .h2 {
     font-size: 54px;
 }
+
 .h3 {
     font-size: 28px;
     margin-bottom: 20px;
@@ -171,7 +174,7 @@ li:nth-child(odd) a:focus {
     transform: translateY(20px);
 }
 
-#navTrigger {
+.nav-trigger {
     display: none;
 }
 
@@ -217,8 +220,8 @@ li:nth-child(odd) a:focus {
         z-index: 100;
         top: 0;
         left: 0;
-        -webkit-transition: all 0.5s); /* Chrome, Safari, Opera */
         visibility: hidden;
+        -webkit-transition: all 0.5s; /* Chrome, Safari, Opera */
         transition: all 0.5s;
         -webkit-transform: translateX(-100%); /* Chrome, Safari, Opera */
         -ms-transform: translateX(-100%); /* IE9 */
@@ -247,16 +250,9 @@ li:nth-child(odd) a:focus {
     .nav a.active {
         color: #4285F4; /* Dark Blue */
     }
-    
-    /* CSS Magic - Let's Open that Mobile Navigation */
-    :target {
-        -webkit-transform: translateX(0); /* Chrome, Safari, Opera */
-        -ms-transform: translateX(0); /* IE9 */
-        transform: translateX(0);    
-    }
 
     /* CSS Magic - Open the Mobile Navigation when the hidden checkbox is checked */
-    #navTrigger:checked + nav {
+    .nav-trigger:checked + .nav {
         visibility: visible;
         -webkit-transform: translateX(0); /* Chrome, Safari, Opera */
         -ms-transform: translateX(0); /* IE9 */
@@ -330,10 +326,10 @@ li:nth-child(odd) a:focus {
     position: relative;
     top: 50%;
     left: 0;
+    text-align: center;
     -webkit-transform: translateY(-40%); /* Chrome, Safari, Opera */
     -ms-transform: translateY(-40%); /* IE9 */
     transform: translateY(-40%);
-    text-align: center;
 }
 
 .sec--hero__logo {
@@ -360,6 +356,7 @@ li:nth-child(odd) a:focus {
     ============================================================================= */
 
 .footer {
+    border-color: #666; /* Gray */
     border-top: 1px solid rgba(102, 102, 102, 0.2); /* Gray with 20% alpha opacity */
     color: #666; /* Gray */
     font-size: 13px;
