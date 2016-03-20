@@ -45,7 +45,7 @@ a {
     color: #777;  /* Light Black */
     outline: 0;
     text-decoration: none;
-    -webkit-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s linear;
     transition: all 0.1s linear;
 }
 
