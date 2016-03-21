@@ -2,7 +2,8 @@
 Site template for Women Techmakers Hamburg.
 
 This is the template website for the WTH first workshop.
-This template shall be downloaded by all participants in the workshop.
+
+This template shall be downloaded by all MENTORS in the workshop.
 
 ##Questions?
 
