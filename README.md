@@ -1,7 +1,8 @@
 # wth-website
 Site template for Women Techmakers Hamburg.
 
-This is the work-in-progress website for the WTH first workshop.
+This is the template website for the WTH first workshop.
+This template shall be downloaded by all participants in the workshop.
 
 ##Questions?
 
