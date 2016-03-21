@@ -51,6 +51,6 @@
 
 @media only screen and (max-width: 768px) {
 	.col { 
-		margin: 4% 0%;
+		margin: 1% 0 1% 0%;
 	}
 }

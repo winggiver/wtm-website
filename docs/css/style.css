@@ -53,7 +53,7 @@ img {
     ============================================================================= */
 
 a {
-    border-color: #666; /* Gray */
+    border-color: #666; /* Fallback Gray */
     border-bottom: 1px solid rgba(102, 102, 102, 0.3); /* Gray */
     color: #666;  /* Gray */
     outline: 0;
@@ -64,7 +64,7 @@ a {
 
 a:hover,
 a:focus {
-    border-color: #1CE9B6; /* Green */
+    border-color: #1CE9B6; /* Fallback Green */
     border-color: rgba(28, 233, 182, 0.2); /* Green with 20% alpha opacity */
 }
 
@@ -80,18 +80,18 @@ li:nth-child(even) a:focus {
     color: #1CE9B6; /* Green */
 }
 
-.h1, .h2, .h3, .h4 {
+.h1, .h2, .h3, .h4, .cite {
     color: #666; /* Gray */
     font-weight: 100;
-    line-height: 1.1;    
-    margin: 5px 0 5px 0;
+    line-height: 1.1;  
 }
 
 .h2 {
     font-size: 54px;
 }
 
-.h3 {
+.h3,
+.cite {
     font-size: 28px;
     margin-bottom: 20px;
 }
@@ -99,6 +99,10 @@ li:nth-child(even) a:focus {
 .h4 {
     font-size: 20px;
     margin-bottom: 20px;
+}
+
+.cite {
+    font-style: normal;
 }
 
 @media only screen and (max-width: 768px) {
@@ -134,7 +138,7 @@ li:nth-child(even) a:focus {
 .header {
     width: 100%;
     height: 60px;
-    background-color: #fff; /* White */
+    background-color: #fff; /* Fallback White */
     background-color: rgba(255,255,255, 0.9); /* White with 90% alpha opacity */
     position: fixed;
     z-index: 120;
@@ -290,12 +294,17 @@ li:nth-child(even) a:focus {
     padding-top: 120px;
 }
 
+.sec--content .h2 {
+    color: #4285F4; /* Dark Blue */
+}
+
 .sec--content ul {
     list-style-type: square;    
 }
 
 .sec--content ul li {
-    margin-bottom: 10px;    
+    margin-bottom: 10px;  
+    margin-left: 18px;  
 }
 
 .sec--content ul li:nth-child(odd) {
@@ -311,9 +320,26 @@ li:nth-child(even) a:focus {
 }
 
 .col {
-    padding: 0 25px;
+    padding: 25px;
 }
-    
+
+.img--responsive {
+    max-width: 100%; 
+    height: auto !important;   
+}
+
+.img--circle {
+    border-radius: 50%;
+}
+
+.cite--title {
+    font-size: 20px;  
+}
+
+.footer--blockquote {
+    margin-top: 20px;
+}
+ 
 @media only screen and (min-width: 769px) {
     .sec--content .wrapper {
         padding: 0 35px;
@@ -323,17 +349,7 @@ li:nth-child(even) a:focus {
 
 
 /*  =============================================================================
-    COMMUNITY PAGE STYLES  
-    ============================================================================= */
-
-.blockquote .cite {
-    font-weight: 300;
-}
-
-
-
-/*  =============================================================================
-    HERO SECTION  
+    HOME PAGE STYLES
     ============================================================================= */
 
 .sec--hero {
@@ -346,9 +362,9 @@ li:nth-child(even) a:focus {
     background-size: cover;
 }
 
-.sec--hero__section {
+.sec--hero .section {
     width: 100%;
-    background-color: #fff; /* White */
+    background-color: #fff; /* Fallback White */
     background-color: rgba(255,255,255, 0.9); /* White with 90% alpha opacity */
     padding: 20px 12px 12px;
     position: relative;
@@ -380,11 +396,73 @@ li:nth-child(even) a:focus {
 
 
 /*  =============================================================================
+    COMMUNITY PAGE STYLES  
+    ============================================================================= */
+
+.sec--community ul {
+    list-style-type: none;    
+}
+
+.sec--community ul li:nth-child(odd),
+.sec--community ul li:nth-child(even) {
+    color: #000;  /* Black */
+}
+
+.sec--community li:not(:first-of-type) {
+    padding-top: 60px;
+}
+
+.sec--community li:not(:last-of-type) {
+    border-color: #666; /* Fallback Gray */
+    border-bottom: 1px solid rgba(102, 102, 102, 0.2); /* Gray with 20% alpha opacity */
+    padding-bottom: 60px;
+}
+
+.sec--community .col--last {
+    /* No need for a Fallback Color on full opacity here. Otherwise the text box will be unreadable. */
+    background-color: rgba(66, 133, 244, 0.05); /* Dark Blue with 5% alpha opacity */
+}
+
+@media only screen and (max-width: 768px) {   
+    .sec--community figure {
+        text-align: center;
+    }
+}
+
+
+
+/*  =============================================================================
+    MENTORS PAGE STYLES 
+    ============================================================================= */
+
+.sec--mentors article:not(:first-of-type) {
+    padding-top: 60px;
+}
+
+.sec--mentors article:not(:last-of-type) {
+    border-color: #666; /* Fallback Gray */
+    border-bottom: 1px solid rgba(102, 102, 102, 0.2); /* Gray with 20% alpha opacity */
+    padding-bottom: 60px;
+}
+
+@media only screen and (max-width: 768px) {   
+    .sec--mentors .col {
+        padding-top: 0;
+    }
+    
+    .sec--mentors figure {
+        text-align: center;
+    }
+}
+
+
+
+/*  =============================================================================
     FOOTER 
     ============================================================================= */
 
 .footer {
-    border-color: #666; /* Gray */
+    border-color: #666; /* Fallback Gray */
     border-top: 1px solid rgba(102, 102, 102, 0.2); /* Gray with 20% alpha opacity */
     color: #666; /* Gray */
     font-size: 13px;
