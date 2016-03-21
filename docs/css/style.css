@@ -32,10 +32,10 @@ body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 300;
-    line-height: 1.5;
+    line-height: 2;
 }
 
-figure {
+.figure {
     margin: 0;
     padding: 0;
 }
@@ -332,14 +332,19 @@ li:nth-child(even) a:focus {
     border-radius: 50%;
 }
 
-.cite--title {
+    
+.img--headline {
+    width: 85%;
+}
+
+.job-title {
     font-size: 20px;  
 }
 
 .footer--blockquote {
     margin-top: 20px;
 }
- 
+
 @media only screen and (min-width: 769px) {
     .sec--content .wrapper {
         padding: 0 35px;
@@ -396,6 +401,35 @@ li:nth-child(even) a:focus {
 
 
 /*  =============================================================================
+    ABOUT PAGE STYLES  
+    ============================================================================= */
+
+.sec--about .figure {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.sec--about .wrapper div:not(:first-of-type) .h2 {
+    border-color: #666; /* Fallback Gray */
+    border-top: 1px solid rgba(102, 102, 102, 0.2); /* Gray with 20% alpha opacity */
+    margin-top: 25px;
+    padding-top: 60px;
+} 
+ 
+ 
+ 
+/*  =============================================================================
+    EVENTS PAGE STYLES  
+    ============================================================================= */      
+
+.sec--events .figure {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+ 
+    
+/*  =============================================================================
     COMMUNITY PAGE STYLES  
     ============================================================================= */
 
@@ -424,7 +458,7 @@ li:nth-child(even) a:focus {
 }
 
 @media only screen and (max-width: 768px) {   
-    .sec--community figure {
+    .sec--community .figure {
         text-align: center;
     }
 }
@@ -450,7 +484,7 @@ li:nth-child(even) a:focus {
         padding-top: 0;
     }
     
-    .sec--mentors figure {
+    .sec--mentors .figure {
         text-align: center;
     }
 }
