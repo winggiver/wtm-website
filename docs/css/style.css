@@ -10,8 +10,9 @@ Blue: #4FC3F7 - rgb(79, 195, 247);
 Dark Blue: #4285F4 - rgb(66, 133, 244);
 */
 
+
 /*  =============================================================================
-    RESETS  
+    CSS RESETS  
     ============================================================================= */
 
 /* CSS RESETS are a set of CSS rules that resets the styling of all HTML elements to a consistent baseline in all browsers. Every browser has its own default 'user agent' stylesheet, and we need to normalize all that CSS. */
@@ -51,10 +52,10 @@ img {
 
 
 /*  =============================================================================
-    UTILITY  
+    UTILITY - HTML ELEMENTS 
     ============================================================================= */
 
-/* UTILITY - HTML ELEMENTS are a set of CSS rules that will be applied into certain HTML elements that are commonly used through each HTML document. By grouping them into this module and styling them once, we'll facilite the workflow of re-using such HTML elements and avoiding the need of style them over and over again. */
+/* UTILITY - HTML ELEMENTS are a set of CSS rules that will be applied into certain CSS selectors that are commonly used through each HTML document. By grouping them into this module and styling them once, we'll facilite the workflow of re-using such CSS selectors (class selectors or element type selectors/HTML elements) and avoiding the need of style them over and over again. */
 
 a {
     border-color: #666; /* Fallback Gray */
@@ -121,7 +122,7 @@ li:nth-child(even) a:focus {
     HELPER CLASSES  
     ============================================================================= */
 
-/* HELPER CLASSES are a set of CSS rules that will be applied into certain classes that are created to perform a certain desired style for an HTML element. The advantage of creating them is that we'll be able to re-use those classes as much as we need to in any HTML element that we'll like. It could be a class inside a <h1 class="helper-class"></h1> tag, a <div class="helper-class"></div> tag, an <img class="helper-class"> tag, etc. */
+/* HELPER CLASSES are a set of CSS rules that will be applied into certain classes that are created to perform a certain desired style for an HTML element. The advantage of creating them is that we'll be able to re-use those classes as much as we need to in any HTML element that we'll like. We'll avoid repeating those styling properties in our CSS, and create a much smaller CSS file. These classes can be used inside a <h1 class="helper-class"></h1> tag, a <div class="helper-class"></div> tag, an <img class="helper-class"> tag, etc. */
      
 .img--responsive {
     max-width: 100%; 
@@ -134,14 +135,6 @@ li:nth-child(even) a:focus {
     
 .img--headline {
     width: 85%;
-}
-
-.job-title {
-    font-size: 20px;  
-}
-
-.footer--blockquote {
-    margin-top: 20px;
 }
 
 .visible-mobile {
@@ -157,8 +150,74 @@ li:nth-child(even) a:focus {
 
 
 /*  =============================================================================
-    HEADER & NAVIGATION 
+    GENERAL STYLES  
     ============================================================================= */
+
+/* GENERAL STYLES are a set of CSS rules that will applied into certain CSS selectors that are created to perform a standard style desired for an HTML element. Similarly to the Helper Classes, the General Styles contains class selectors that can be re-used in our HTML elements, again, to avoid repetition. But element type selectors (HTML elements) can also be clasified into this category, as opposed to the Helper Classes. */
+
+.wrapper {
+    height: 100%;
+    padding: 0 25px;
+}    
+
+.sec--content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
+.sec--content .h2 {
+    color: #4285F4; /* Dark Blue */
+}
+
+.sec--content ul {
+    list-style-type: square;    
+}
+
+.sec--content ul li {
+    margin-bottom: 10px;  
+    margin-left: 18px;  
+}
+
+.sec--content ul li:nth-child(odd) {
+    color: #4285F4; /* Dark Blue */ 
+}
+
+.sec--content ul li:nth-child(even) {
+    color: #4FC3F7; /*  Blue */ 
+}
+
+.sec--content .h2 {
+    margin-bottom: 60px;
+}
+
+.col {
+    padding: 25px;
+}
+
+.job-title {
+    font-size: 20px;  
+}
+
+.footer--blockquote {
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 769px) {
+    .sec--content .wrapper {
+        padding: 0 35px;
+    }
+}
+
+
+
+/*  =============================================================================
+    HEADER & NAVIGATION STYLES
+    ============================================================================= */
+
+/* HEADER & NAVIGATION STYLES are a set of CSS rules that will be applied inside the header and navigation HTML elements via CSS selectors (class selectors or element type selectors/HTML elements) already defined in each HTML element that needs styling to match our template. */
+
 
 /* LOGO AND NAVIGATION */
 
@@ -302,65 +361,15 @@ li:nth-child(even) a:focus {
 
 
 /*  =============================================================================
-    GENERAL STYLES  
-    ============================================================================= */
-
-.wrapper {
-    height: 100%;
-    padding: 0 25px;
-}    
-
-.sec--content {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 120px;
-}
-
-.sec--content .h2 {
-    color: #4285F4; /* Dark Blue */
-}
-
-.sec--content ul {
-    list-style-type: square;    
-}
-
-.sec--content ul li {
-    margin-bottom: 10px;  
-    margin-left: 18px;  
-}
-
-.sec--content ul li:nth-child(odd) {
-    color: #4285F4; /* Dark Blue */ 
-}
-
-.sec--content ul li:nth-child(even) {
-    color: #4FC3F7; /*  Blue */ 
-}
-
-.sec--content .h2 {
-    margin-bottom: 60px;
-}
-
-.col {
-    padding: 25px;
-}
-
-@media only screen and (min-width: 769px) {
-    .sec--content .wrapper {
-        padding: 0 35px;
-    }
-}
-
-
-
-/*  =============================================================================
     HOME PAGE STYLES
     ============================================================================= */
+
+/* HOME PAGE STYLES are a set of CSS rules that will be applied to our index.HTML page via CSS selectors (class selectors or element type selectors/HTML elements) already defined in each HTML element that needs styling to match our template. */
 
 .main--hero {
     height: 100%;
 }
+
 .sec--hero {
     width: 100%;
     height: 100%;
@@ -408,6 +417,8 @@ li:nth-child(even) a:focus {
     ABOUT PAGE STYLES  
     ============================================================================= */
 
+/* ABOUT PAGE STYLES are a set of CSS rules that will be applied to our about.HTML page via CSS selectors (class selectors or element type selectors/HTML elements) already defined in each HTML element that needs styling to match our template. */
+
 .sec--about .figure {
     margin-bottom: 25px;
     text-align: center;
@@ -426,6 +437,8 @@ li:nth-child(even) a:focus {
     EVENTS PAGE STYLES  
     ============================================================================= */      
 
+/* EVENTS PAGE STYLES are a set of CSS rules that will be applied to our events.HTML page via CSS selectors (class selectors or element type selectors/HTML elements) already defined in each HTML element that needs styling to match our template. */
+
 .sec--events .figure {
     margin-bottom: 25px;
     text-align: center;
@@ -436,6 +449,8 @@ li:nth-child(even) a:focus {
 /*  =============================================================================
     COMMUNITY PAGE STYLES  
     ============================================================================= */
+
+/* COMMUNITY PAGE STYLES are a set of CSS rules that will be applied to our community.HTML page via CSS selectors (class selectors or element type selectors/HTML elements) already defined in each HTML element that needs styling to match our template. */
 
 .sec--community ul {
     list-style-type: none;    
@@ -473,6 +488,8 @@ li:nth-child(even) a:focus {
     MENTORS PAGE STYLES 
     ============================================================================= */
 
+/* MENTORS PAGE STYLES are a set of CSS rules that will be applied to our mentors.HTML page via CSS selectors (class selectors or element type selectors/HTML elements) already defined in each HTML element that needs styling to match our template. */
+
 .sec--mentors article:not(:first-of-type) {
     padding-top: 60px;
 }
@@ -496,8 +513,10 @@ li:nth-child(even) a:focus {
 
 
 /*  =============================================================================
-    FOOTER 
+    FOOTER STYLES
     ============================================================================= */
+
+/* FOOTER PAGE are a set of CSS rules that will be applied inside the Footer HTML element via CSS selectors (class selectors or element type selectors/HTML elements) already defined in each HTML element that needs styling to match our template. */
 
 .footer {
     border-color: #666; /* Fallback Gray */
