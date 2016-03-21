@@ -10,142 +10,248 @@ Blue: #4FC3F7 - rgb(79, 195, 247);
 Dark Blue: #4285F4 - rgb(66, 133, 244);
 */
 
+
 /*  =============================================================================
-    RESETS  
+    CSS RESETS  
     ============================================================================= */
 
+/* CSS RESETS are a set of CSS rules that resets the styling of all HTML elements to a consistent baseline in all browsers. Every browser has its own default 'user agent' stylesheet, and we need to normalize all that CSS. */
+
 * {
+/*
     box-sizing: border-box;
     margin: 0;
     padding: 0;    
+*/
 }
 
 html,
 body {
+/*
     width: 100%;
     height: 100%;
+*/
 }
 
 body {
-    background: #fff; /* White */
-    color: #000;  /* Black */
+/*
+    background: #fff; 
+    color: #000; 
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 300;
-    line-height: 1.5;
+    line-height: 2;
+*/
+}
+
+.figure {
+/*
+    margin: 0;
+    padding: 0;
+*/
 }
 
 img {
-    border: 0; /* Remove border from img when inside 'a' element in IE 8-10. */
+/*
+    border: 0; 
     vertical-align: middle;
     outline: none;
+*/
 }
 
 
 
 /*  =============================================================================
-    UTILITY  
+    UTILITY - HTML ELEMENTS 
     ============================================================================= */
 
+/* UTILITY - HTML ELEMENTS are a set of CSS rules that will be applied into certain CSS selectors that are commonly used through each HTML document. By grouping them into this module and styling them once, we'll facilite the workflow of re-using such CSS selectors (class selectors or element type selectors/HTML elements) and avoiding the need of style them over and over again. */
+
 a {
-    border-color: #666; /* Gray */
-    border-bottom: 1px solid rgba(102, 102, 102, 0.3); /* Gray */
-    color: #666;  /* Gray */
+/*
+    border-color: #666; 
+    border-bottom: 1px solid rgba(102, 102, 102, 0.3); 
+    color: #666; 
     outline: 0;
     text-decoration: none;
-    -webkit-transition: color 0.1s linear, border 0.2s linear; /* Chrome, Safari, Opera */
+    -webkit-transition: color 0.1s linear, border 0.2s linear;
     transition: color 0.1s linear, border 0.2s linear;
+*/
 }
 
 a:hover,
 a:focus {
-    border-color: #1CE9B6; /* Green */
-    border-color: rgba(28, 233, 182, 0.2); /* Green with 20% alpha opacity */
+/*
+    border-color: #1CE9B6;
+    border-color: rgba(28, 233, 182, 0.2); 
+*/
 }
 
 a:hover,
 a:focus,
 li:nth-child(odd) a:hover,
 li:nth-child(odd) a:focus {
-    color: #00BFA5; /* Dark Green */
+/*     color: #00BFA5; */
 }
 
 li:nth-child(even) a:hover,
 li:nth-child(even) a:focus {
-    color: #1CE9B6; /* Green */
+/*     color: #1CE9B6; */
 }
 
-.h1, .h2, .h3, .h4 {
-    color: #666; /* Gray */
+.h1, .h2, .h3, .h4, .cite {
+/*
+    color: #666; 
     font-weight: 100;
-    line-height: 1.1;    
-    margin: 5px 0 5px 0;
+    line-height: 1.1;  
+*/
 }
 
 .h2 {
-    font-size: 54px;
+/*     font-size: 54px; */
 }
 
-.h3 {
+.h3,
+.cite {
+/*
     font-size: 28px;
     margin-bottom: 20px;
+*/
 }
 
 .h4 {
+/*
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 20px
+*/;
+}
+
+.cite {
+/*     font-style: normal; */
 }
 
 @media only screen and (max-width: 768px) {
     .h2 {
-        font-size: 44px;
+/*         font-size: 44px; */
     }
 }
+
 
 
 /*  =============================================================================
     HELPER CLASSES  
     ============================================================================= */
 
-.trans-1s-all {
-/*     transition: all 0.2s linear; */
+/* HELPER CLASSES are a set of CSS rules that will be applied into certain classes that are created to perform a certain desired style for an HTML element. The advantage of creating them is that we'll be able to re-use those classes as much as we need to in any HTML element that we'll like. We'll avoid repeating those styling properties in our CSS, and create a much smaller CSS file. These classes can be used inside a <h1 class="helper-class"></h1> tag, a <div class="helper-class"></div> tag, an <img class="helper-class"> tag, etc. */
+
+.img--responsive {
+ 
+}
+
+.img--circle {
+
+}
+    
+.img--headline {
+
 }
 
 .visible-mobile {
-    display: none !important;
+
 }
 
 @media only screen and (max-width: 768px) {
     .visible-mobile {
-        display: block !important;
+
     }
 }
 
 
 
 /*  =============================================================================
-    HEADER & NAVIGATION 
+    GENERAL STYLES  
     ============================================================================= */
+
+/* GENERAL STYLES are a set of CSS rules that will applied into certain CSS selectors that are created to perform a standard style desired for an HTML element. Similarly to the Helper Classes, the General Styles contains class selectors that can be re-used in our HTML elements, again, to avoid repetition. But element type selectors (HTML elements) can also be clasified into this category, as opposed to the Helper Classes. */
+
+.wrapper {
+
+}    
+
+.sec--content {
+
+}
+
+.sec--content .h2 {
+
+}
+
+.sec--content ul {
+
+}
+
+.sec--content ul li {
+
+}
+
+.sec--content ul li:nth-child(odd) {
+
+}
+
+.sec--content ul li:nth-child(even) {
+
+}
+
+.sec--content .h2 {
+
+}
+
+.col {
+
+}
+
+.job-title {
+
+}
+
+.footer--blockquote {
+
+}
+
+@media only screen and (min-width: 769px) {
+    .sec--content .wrapper {
+
+    }
+}
+
+
+
+/*  =============================================================================
+    HEADER & NAVIGATION STYLES
+    ============================================================================= */
+
+/* HEADER & NAVIGATION STYLES are a set of CSS rules that will be applied inside the header and navigation HTML elements via CSS selectors (class selectors or element type selectors/HTML elements) already defined in each HTML element that needs styling to match our template. */
+
 
 /* LOGO AND NAVIGATION */
 
 .header {
+/*
     width: 100%;
     height: 60px;
-    background-color: #fff; /* White */
-    background-color: rgba(255,255,255, 0.9); /* White with 90% alpha opacity */
+    background-color: #fff;
+    background-color: rgba(255,255,255, 0.9); 
     position: fixed;
     z-index: 120;
+*/
 }
 
 .logo {
-    float: left;
-    margin: 0;
-    position: relative;
-    z-index: 110;
+
 }
 
 .logo a {
+/*
     width: 189px;
     height: 60px;
     background-image: url("../img/wtm-logo.svg");
@@ -158,235 +264,263 @@ li:nth-child(even) a:focus {
     font: 0/0 a;
     margin-right: 20px;
     vertical-align: middle;
-    -webkit-transition: transform 0.1s linear; /* Chrome, Safari, Opera */
+    -webkit-transition: transform 0.1s linear;
     transition: transform 0.1s linear;
+*/
 }
 
 .logo a:hover,
 .logo a:focus {
-    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+/*
+    -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
-    -webkit-transform: scale(0.9); /* Chrome, Safari, Opera */
-    -ms-transform: scale(0.9); /* IE9 */
+    -webkit-transform: scale(0.9); 
+    -ms-transform: scale(0.9); 
     transform: scale(0.9);
+*/
 }
 
 .menu {
+/*
     cursor: pointer;
     float: right;
-    margin-right: 30px;
-    -webkit-transform: translateY(20px); /* Chrome, Safari, Opera */
-    -ms-transform: translateY(20px); /* IE9 */
+    margin-right: 15px;
+    -webkit-transform: translateY(20px); 
+    -ms-transform: translateY(20px); 
     transform: translateY(20px);
+*/
 }
 
 .nav-trigger {
-    display: none;
+
 }
 
 .nav ul {
+/*
     list-style-type: none;
-    -webkit-transform: translateY(16px); /* Chrome, Safari, Opera */
-    -ms-transform: translateY(16px); /* IE9 */
+    -webkit-transform: translateY(16px);
+    -ms-transform: translateY(16px);
     transform: translateY(16px);
+*/
 }
 
 .nav ul li {
-    display: inline-block;
-    padding: 0 8px;
-    vertical-align: middle;
+
 }
 
 .menu,
 .nav a {
-    border: 0;
-    font-size: 13px;
-    font-weight: 500;
-    text-decoration: none;
-    text-transform: uppercase;
+
 }
 
 .menu:hover,
 .menu:focus {
-    color: #4FC3F7; /* Blue */
+    
 }
 
 .nav a.active {
-    color: #000;  /* Black */
+
 }
 
 @media only screen and (max-width: 768px) {
     .nav {
+/*
         width: 256px;
         height: 100%;
         backface-visibility: hidden;
-        background-color: #fff; /* White */
+        background-color: #fff; 
         overflow: auto;
         position: fixed;
         z-index: 100;
         top: 0;
         left: 0;
         visibility: hidden;
-        -webkit-transition: all 0.5s; /* Chrome, Safari, Opera */
+        -webkit-transition: all 0.5s;
         transition: all 0.5s;
-        -webkit-transform: translateX(-100%); /* Chrome, Safari, Opera */
-        -ms-transform: translateX(-100%); /* IE9 */
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
         transform: translateX(-100%);
+*/
     }
     
     .nav ul {
+/*
         width: 95%;
         line-height: 20px;
         margin: 70px 0 0 13px;
-        -webkit-transform: translateY(0); /* Chrome, Safari, Opera */
-        -ms-transform: translateY(0); /* IE9 */
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0); 
         transform: translateY(0);
+*/
     }
     
     .nav ul li {
-        display: block;    
+        
     }
     
     .nav ul li a {
-        font-size: 16px;
-        display: block;
-        padding: 13px 16px;
+
     }
     
     .nav a.active {
-        color: #4285F4; /* Dark Blue */
+        
     }
 
     /* CSS Magic - Open the Mobile Navigation when the hidden checkbox is checked */
     .nav-trigger:checked + .nav {
+/*
         visibility: visible;
-        -webkit-transform: translateX(0); /* Chrome, Safari, Opera */
-        -ms-transform: translateX(0); /* IE9 */
+        -webkit-transform: translateX(0); 
+        -ms-transform: translateX(0);
         transform: translateX(0); 
+*/
     }
 }
 
 
 
 /*  =============================================================================
-    GENERAL STYLES  
+    HOME PAGE STYLES
     ============================================================================= */
 
-.wrapper {
-    height: 100%;
-    padding: 0 25px;
-}    
+/* HOME PAGE STYLES are a set of CSS rules that will be applied to our index.HTML page via CSS selectors (class selectors or element type selectors/HTML elements) already defined in each HTML element that needs styling to match our template. */
 
-.main {
-    height: 100%;
+.main--hero {
+
 }
-
-.sec--content {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 120px;
-}
-
-.sec--content ul {
-    list-style-type: square;    
-}
-
-.sec--content ul li {
-    margin-bottom: 10px;    
-}
-
-.sec--content ul li:nth-child(odd) {
-    color: #4285F4; /* Dark Blue */ 
-}
-
-.sec--content ul li:nth-child(even) {
-    color: #4FC3F7; /*  Blue */ 
-}
-
-.sec--content .h2 {
-    margin-bottom: 60px;
-}
-
-.col {
-    padding: 0 25px;
-}
-    
-@media only screen and (min-width: 769px) {
-    .sec--content .wrapper {
-        padding: 0 35px;
-    }
-}
-
-
-
-/*  =============================================================================
-    COMMUNITY PAGE STYLES  
-    ============================================================================= */
-
-.blockquote .cite {
-    font-weight: 300;
-}
-
-
-
-/*  =============================================================================
-    HERO SECTION  
-    ============================================================================= */
 
 .sec--hero {
-    width: 100%;
-    height: 100%;
-    background-color: #fff; /* White */
-    background-image: url('../img/hamburg-01.jpg');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
+
 }
 
-.sec--hero__section {
+.sec--hero .section {
+/*
     width: 100%;
-    background-color: #fff; /* White */
-    background-color: rgba(255,255,255, 0.9); /* White with 90% alpha opacity */
+    background-color: #fff;
+    background-color: rgba(255,255,255, 0.9); 
     padding: 20px 12px 12px;
     position: relative;
     top: 50%;
     left: 0;
     text-align: center;
-    -webkit-transform: translateY(-40%); /* Chrome, Safari, Opera */
-    -ms-transform: translateY(-40%); /* IE9 */
+    -webkit-transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
     transform: translateY(-40%);
+*/
 }
 
 .sec--hero__logo {
-    display: inline-block;
-    padding-bottom: 30px;
+
 }
 
 .sec--hero .h2 {
-    display: inline-block;
-    margin-top: 40px;
+
 }
 
     
 @media only screen and (min-width: 769px) {
     .sec--hero__logo {
-        padding-right: 8px;
+
     }
 }
 
 
 
 /*  =============================================================================
-    FOOTER 
+    ABOUT PAGE STYLES  
     ============================================================================= */
 
+/* ABOUT PAGE STYLES are a set of CSS rules that will be applied to our about.HTML page via CSS selectors (class selectors or element type selectors/HTML elements) already defined in each HTML element that needs styling to match our template. */
+
+.sec--about .figure {
+
+}
+
+.sec--about .wrapper div:not(:first-of-type) .h2 {
+
+} 
+ 
+ 
+ 
+/*  =============================================================================
+    EVENTS PAGE STYLES  
+    ============================================================================= */      
+
+/* EVENTS PAGE STYLES are a set of CSS rules that will be applied to our events.HTML page via CSS selectors (class selectors or element type selectors/HTML elements) already defined in each HTML element that needs styling to match our template. */
+
+.sec--events .figure {
+
+}
+
+ 
+    
+/*  =============================================================================
+    COMMUNITY PAGE STYLES  
+    ============================================================================= */
+
+/* COMMUNITY PAGE STYLES are a set of CSS rules that will be applied to our community.HTML page via CSS selectors (class selectors or element type selectors/HTML elements) already defined in each HTML element that needs styling to match our template. */
+
+.sec--community ul {
+
+}
+
+.sec--community ul li:nth-child(odd),
+.sec--community ul li:nth-child(even) {
+
+}
+
+.sec--community li:not(:first-of-type) {
+
+}
+
+.sec--community li:not(:last-of-type) {
+
+}
+
+.sec--community .col--last {
+
+}
+
+@media only screen and (max-width: 768px) {   
+    .sec--community .figure {
+
+    }
+}
+
+
+
+/*  =============================================================================
+    MENTORS PAGE STYLES 
+    ============================================================================= */
+
+/* MENTORS PAGE STYLES are a set of CSS rules that will be applied to our mentors.HTML page via CSS selectors (class selectors or element type selectors/HTML elements) already defined in each HTML element that needs styling to match our template. */
+
+.sec--mentors article:not(:first-of-type) {
+
+}
+
+.sec--mentors article:not(:last-of-type) {
+
+}
+
+@media only screen and (max-width: 768px) {   
+    .sec--mentors .col {
+   
+    }
+    
+    .sec--mentors .figure {
+    
+    }
+}
+
+
+
+/*  =============================================================================
+    FOOTER STYLES
+    ============================================================================= */
+
+/* FOOTER PAGE are a set of CSS rules that will be applied inside the Footer HTML element via CSS selectors (class selectors or element type selectors/HTML elements) already defined in each HTML element that needs styling to match our template. */
+
 .footer {
-    border-color: #666; /* Gray */
-    border-top: 1px solid rgba(102, 102, 102, 0.2); /* Gray with 20% alpha opacity */
-    color: #666; /* Gray */
-    font-size: 13px;
-    margin-top: 60px;
-    padding: 12px 0;
-    text-align: center;
+
 }
