@@ -180,7 +180,7 @@ li:nth-child(even) a:focus {
 .menu {
     cursor: pointer;
     float: right;
-    margin-right: 30px;
+    margin-right: 15px;
     -webkit-transform: translateY(20px); /* Chrome, Safari, Opera */
     -ms-transform: translateY(20px); /* IE9 */
     transform: translateY(20px);
