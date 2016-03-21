@@ -21,8 +21,8 @@ Dark Blue: #4285F4 - rgb(66, 133, 244);
 /*
     box-sizing: border-box;
     margin: 0;
-    padding: 0;    
-*/
+    padding: 0;  
+*/  
 }
 
 html,
@@ -35,7 +35,7 @@ body {
 
 body {
 /*
-    background: #fff; 
+    background: #fff;
     color: #000; 
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -69,12 +69,12 @@ img {
 
 a {
 /*
-    border-color: #666; 
+    border-color: #666;
     border-bottom: 1px solid rgba(102, 102, 102, 0.3); 
     color: #666; 
     outline: 0;
     text-decoration: none;
-    -webkit-transition: color 0.1s linear, border 0.2s linear;
+    -webkit-transition: color 0.1s linear, border 0.2s linear; 
     transition: color 0.1s linear, border 0.2s linear;
 */
 }
@@ -83,7 +83,7 @@ a:hover,
 a:focus {
 /*
     border-color: #1CE9B6;
-    border-color: rgba(28, 233, 182, 0.2); 
+    border-color: rgba(28, 233, 182, 0.2);
 */
 }
 
@@ -96,7 +96,7 @@ li:nth-child(odd) a:focus {
 
 li:nth-child(even) a:hover,
 li:nth-child(even) a:focus {
-/*     color: #1CE9B6; */
+/*     color: #1CE9B6;  */
 }
 
 .h1, .h2, .h3, .h4, .cite {
@@ -122,8 +122,8 @@ li:nth-child(even) a:focus {
 .h4 {
 /*
     font-size: 20px;
-    margin-bottom: 20px
-*/;
+    margin-bottom: 20px;
+*/
 }
 
 .cite {
@@ -143,9 +143,9 @@ li:nth-child(even) a:focus {
     ============================================================================= */
 
 /* HELPER CLASSES are a set of CSS rules that will be applied into certain classes that are created to perform a certain desired style for an HTML element. The advantage of creating them is that we'll be able to re-use those classes as much as we need to in any HTML element that we'll like. We'll avoid repeating those styling properties in our CSS, and create a much smaller CSS file. These classes can be used inside a <h1 class="helper-class"></h1> tag, a <div class="helper-class"></div> tag, an <img class="helper-class"> tag, etc. */
-
+     
 .img--responsive {
- 
+
 }
 
 .img--circle {
@@ -175,52 +175,63 @@ li:nth-child(even) a:focus {
 /* GENERAL STYLES are a set of CSS rules that will applied into certain CSS selectors that are created to perform a standard style desired for an HTML element. Similarly to the Helper Classes, the General Styles contains class selectors that can be re-used in our HTML elements, again, to avoid repetition. But element type selectors (HTML elements) can also be clasified into this category, as opposed to the Helper Classes. */
 
 .wrapper {
-
+/*
+    height: 100%;
+    padding: 0 25px;
+*/
 }    
 
 .sec--content {
-
+/*
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 120px;
+*/
 }
 
 .sec--content .h2 {
-
+/*     color: #4285F4;  */
 }
 
 .sec--content ul {
-
+/*     list-style-type: square;     */
 }
 
 .sec--content ul li {
-
+/*
+    margin-bottom: 10px;  
+    margin-left: 18px; 
+*/ 
 }
 
 .sec--content ul li:nth-child(odd) {
-
+/*     color: #4285F4;  */
 }
 
 .sec--content ul li:nth-child(even) {
-
+/*     color: #4FC3F7;  */
 }
 
 .sec--content .h2 {
-
+/*     margin-bottom: 60px; */
 }
 
 .col {
-
+/*     padding: 25px; */
 }
 
 .job-title {
-
+/*     font-size: 20px;   */
 }
 
 .footer--blockquote {
-
+/*     margin-top: 20px; */
 }
 
 @media only screen and (min-width: 769px) {
     .sec--content .wrapper {
-
+/*         padding: 0 35px; */
     }
 }
 
@@ -236,14 +247,7 @@ li:nth-child(even) a:focus {
 /* LOGO AND NAVIGATION */
 
 .header {
-/*
-    width: 100%;
-    height: 60px;
-    background-color: #fff;
-    background-color: rgba(255,255,255, 0.9); 
-    position: fixed;
-    z-index: 120;
-*/
+
 }
 
 .logo {
@@ -264,7 +268,7 @@ li:nth-child(even) a:focus {
     font: 0/0 a;
     margin-right: 20px;
     vertical-align: middle;
-    -webkit-transition: transform 0.1s linear;
+    -webkit-transition: transform 0.1s linear; 
     transition: transform 0.1s linear;
 */
 }
@@ -272,10 +276,10 @@ li:nth-child(even) a:focus {
 .logo a:hover,
 .logo a:focus {
 /*
-    -webkit-filter: grayscale(100%); 
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     -webkit-transform: scale(0.9); 
-    -ms-transform: scale(0.9); 
+    -ms-transform: scale(0.9);
     transform: scale(0.9);
 */
 }
@@ -285,8 +289,8 @@ li:nth-child(even) a:focus {
     cursor: pointer;
     float: right;
     margin-right: 15px;
-    -webkit-transform: translateY(20px); 
-    -ms-transform: translateY(20px); 
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
     transform: translateY(20px);
 */
 }
@@ -315,7 +319,7 @@ li:nth-child(even) a:focus {
 
 .menu:hover,
 .menu:focus {
-    
+
 }
 
 .nav a.active {
@@ -328,17 +332,17 @@ li:nth-child(even) a:focus {
         width: 256px;
         height: 100%;
         backface-visibility: hidden;
-        background-color: #fff; 
+        background-color: #fff;
         overflow: auto;
         position: fixed;
         z-index: 100;
         top: 0;
         left: 0;
         visibility: hidden;
-        -webkit-transition: all 0.5s;
+        -webkit-transition: all 0.5s; 
         transition: all 0.5s;
-        -webkit-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%); 
+        -ms-transform: translateX(-100%); 
         transform: translateX(-100%);
 */
     }
@@ -348,14 +352,14 @@ li:nth-child(even) a:focus {
         width: 95%;
         line-height: 20px;
         margin: 70px 0 0 13px;
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0); 
+        -webkit-transform: translateY(0); 
+        -ms-transform: translateY(0);
         transform: translateY(0);
 */
     }
     
     .nav ul li {
-        
+
     }
     
     .nav ul li a {
@@ -363,7 +367,7 @@ li:nth-child(even) a:focus {
     }
     
     .nav a.active {
-        
+
     }
 
     /* CSS Magic - Open the Mobile Navigation when the hidden checkbox is checked */
@@ -396,7 +400,7 @@ li:nth-child(even) a:focus {
 .sec--hero .section {
 /*
     width: 100%;
-    background-color: #fff;
+    background-color: #fff; 
     background-color: rgba(255,255,255, 0.9); 
     padding: 20px 12px 12px;
     position: relative;
@@ -474,7 +478,7 @@ li:nth-child(even) a:focus {
 }
 
 .sec--community li:not(:last-of-type) {
-
+    
 }
 
 .sec--community .col--last {
@@ -505,11 +509,11 @@ li:nth-child(even) a:focus {
 
 @media only screen and (max-width: 768px) {   
     .sec--mentors .col {
-   
+
     }
     
     .sec--mentors .figure {
-    
+
     }
 }
 
