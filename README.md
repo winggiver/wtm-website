@@ -25,8 +25,8 @@ Author --> Graham Miller --> http://grahamrobertsonmiller.co.uk/
 
 ##Hamburg Photos
 
-Photos from the city of Hamburg were provided by WTM HH lead and members.
+Photos from the city of Hamburg were provided by WTM lead and members.
 
-WTM Lead Women Techmakers Hamburg --> Anja Schumann
+WTM Lead --> Anja Schumann
 
 WTM Member --> Simla K&uuml;&ccedil;&uuml;ksayan
