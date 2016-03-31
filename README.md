@@ -1,7 +1,7 @@
 # wth-website
 Site template for Women Techmakers Hamburg.
 
-This is the work-in-progress website for the WTH first workshop.
+This is the work-in-progress website for the WTM HH first workshop.
 
 This template shall be downloaded by all PARTICIPANTS in the workshop.
 
@@ -25,8 +25,8 @@ Author --> Graham Miller --> http://grahamrobertsonmiller.co.uk/
 
 ##Hamburg Photos
 
-Photos from the city of Hamburg were provided by WTH leads and members.
+Photos from the city of Hamburg were provided by WTM lead and members.
 
-WTM Lead Women Techmakers Hamburg --> Anja Schumann
+WTM Lead --> Anja Schumann
 
-WTH Member --> Simla K&uuml;&ccedil;&uuml;ksayan
+WTM Member --> Simla K&uuml;&ccedil;&uuml;ksayan
