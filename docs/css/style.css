@@ -1,6 +1,6 @@
 /*! WOMEN TECHMAKERS HAMBURG: This is our custom CSS. */
 
-/* WTH Color Palette: Hex Values - RGB Values: 
+/* WTM HH Color Palette: Hex Values - RGB Values: 
 White: #fff - rgb(255, 255, 255);
 Gray: #666 - rgb(102, 102, 102);
 Black: #000 - rgb(0, 0, 0);
@@ -12,10 +12,10 @@ Dark Blue: #4285F4 - rgb(66, 133, 244);
 
 
 /*  =============================================================================
-    CSS RESETS  
+    BASE STYLES 
     ============================================================================= */
 
-/* CSS RESETS are a set of CSS rules that resets the styling of all HTML elements to a consistent baseline in all browsers. Every browser has its own default 'user agent' stylesheet, and we need to normalize all that CSS. */
+/* BASE STYLES are a set of CSS rules that will be applied into desired global HTML elements via CSS selectors (element type selectors/HTML elements or class selectors). */
 
 * {
     box-sizing: border-box;
@@ -124,7 +124,7 @@ li:nth-child(even) a:focus {
     HELPER CLASSES  
     ============================================================================= */
 
-/* HELPER CLASSES are a set of CSS rules that will be applied into certain classes that are created to perform a certain desired style for an HTML element. The advantage of creating them is that we'll be able to re-use those classes as much as we need to in any HTML element that we'll like. We'll avoid repeating those styling properties in our CSS, and create a much smaller CSS file. These classes can be used inside a <h1 class="helper-class"></h1> tag, a <div class="helper-class"></div> tag, an <img class="helper-class"> tag, etc. */
+/* HELPER CLASSES are a set of CSS rules that will be applied into certain classes that are created to perform an specific style for an HTML element. The advantage of creating them is that we'll be able to re-use those classes as much as we need to in any HTML element that we'll like. We'll avoid repeating those styling properties in our CSS, and create a much smaller CSS file. These classes can be used inside a <h1 class="helper-class"></h1> tag, a <div class="helper-class"></div> tag, an <img class="helper-class"> tag, etc. */
      
 .img--responsive {
     max-width: 100%; 
@@ -157,7 +157,7 @@ li:nth-child(even) a:focus {
     GENERAL STYLES  
     ============================================================================= */
 
-/* GENERAL STYLES are a set of CSS rules that will applied into certain CSS selectors that are created to perform a standard style desired for an HTML element. Similarly to the Helper Classes, the General Styles contains class selectors that can be re-used in our HTML elements, again, to avoid repetition. But element type selectors (HTML elements) can also be clasified into this category, as opposed to the Helper Classes. */
+/* GENERAL STYLES are a set of CSS rules that will applied into certain global CSS selectors that are created to perform a standard style desired for an HTML element. Similarly to the Helper Classes, the General Styles contains class selectors that can be re-used in our HTML elements, again, to avoid repetition. But element type selectors (HTML elements) can also be clasified into this category, as opposed to the Helper Classes. */
 
 .wrapper {
     height: 100%;
