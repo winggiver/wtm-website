@@ -110,6 +110,8 @@ li:nth-child(even) a:focus {
     font-style: normal;
 }
 
+/*  MEDIA QUERIES - BREAKPOINT: Device has a maximal width of 768 pixels */
+
 @media only screen and (max-width: 768px) {
     .h2 {
         font-size: 44px;
@@ -140,6 +142,8 @@ li:nth-child(even) a:focus {
 .visible-mobile {
     display: none !important;
 }
+
+/*  MEDIA QUERIES - BREAKPOINT: Device has a maximal width of 768 pixels */
 
 @media only screen and (max-width: 768px) {
     .visible-mobile {
@@ -203,6 +207,8 @@ li:nth-child(even) a:focus {
 .footer--blockquote {
     margin-top: 20px;
 }
+
+/*  MEDIA QUERIES - BREAKPOINT: Device has a minimal width of 769 pixels */
 
 @media only screen and (min-width: 769px) {
     .sec--content .wrapper {
@@ -430,6 +436,7 @@ li:nth-child(even) a:focus {
     margin-top: 40px;
 }
 
+/*  MEDIA QUERIES - BREAKPOINT: Device has a minimal width of 769 pixels */
     
 @media only screen and (min-width: 769px) {
     .sec--hero__logo {
@@ -502,6 +509,8 @@ li:nth-child(even) a:focus {
     background-color: rgba(66, 133, 244, 0.05); /* Dark Blue with 5% alpha opacity */
 }
 
+/*  MEDIA QUERIES - BREAKPOINT: Device has a maximal width of 768 pixels */
+
 @media only screen and (max-width: 768px) {   
     .sec--community .figure {
         text-align: center;
@@ -525,6 +534,8 @@ li:nth-child(even) a:focus {
     border-bottom: 1px solid rgba(102, 102, 102, 0.2); /* Gray with 20% alpha opacity */
     padding-bottom: 60px;
 }
+
+/*  MEDIA QUERIES - BREAKPOINT: Device has a maximal width of 768 pixels */
 
 @media only screen and (max-width: 768px) {   
     .sec--mentors .col {
