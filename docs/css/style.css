@@ -398,11 +398,11 @@ li:nth-child(even) a:focus {
 
 /* HOME PAGE STYLES are a set of CSS rules that will be applied to our index.HTML page via CSS selectors (class selectors or element type selectors/HTML elements) already defined in each HTML element that needs styling to match our template. */
 
-.main--hero {
+.main--home {
     height: 100%;
 }
 
-.sec--hero {
+.sec--home {
     width: 100%;
     height: 100%;
     background-color: #fff; /* White */
@@ -412,7 +412,7 @@ li:nth-child(even) a:focus {
     background-size: cover;
 }
 
-.sec--hero .section {
+.sec--home .section {
     width: 100%;
     background-color: #fff; /* Fallback White */
     background-color: rgba(255,255,255, 0.9); /* White with 90% alpha opacity */
@@ -426,21 +426,21 @@ li:nth-child(even) a:focus {
     transform: translateY(-40%);
 }
 
-.sec--hero__logo {
+.sec--home__logo {
     display: inline-block;
     padding-bottom: 30px;
-}
-
-.sec--hero .h2 {
-    display: inline-block;
-    margin-top: 40px;
 }
 
 /*  MEDIA QUERIES - BREAKPOINT: Device has a minimal width of 769 pixels */
     
 @media only screen and (min-width: 769px) {
-    .sec--hero__logo {
+    .sec--home__logo {
         padding-right: 8px;
+    }
+    
+    .sec--home .h2 {
+        display: inline-block;
+        margin-top: 40px;
     }
 }
 
