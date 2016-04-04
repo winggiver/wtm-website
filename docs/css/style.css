@@ -323,10 +323,7 @@ li:nth-child(even) a:focus {
     text-transform: uppercase;
 }
 
-/*  =============================================================================
-    MEDIA QUERIES - BREAKPOINT:
-    If device has a maximal width of 768 pixels
-    ============================================================================= */
+/*  MEDIA QUERIES - BREAKPOINT: Device has a maximal width of 768 pixels */
     
 @media only screen and (max-width: 768px) {
     
