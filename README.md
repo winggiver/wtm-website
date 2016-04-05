@@ -1,5 +1,4 @@
-# wtm-website
-Site template for Women Techmakers Hamburg.
+# Women Techmakers Hamburg Site Template
 
 Material for the HTML & CSS Workshops.
 
