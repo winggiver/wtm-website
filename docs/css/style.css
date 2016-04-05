@@ -1,6 +1,6 @@
 /*! WOMEN TECHMAKERS HAMBURG: This is our custom CSS. */
 
-/* WTH Color Palette: Hex Values - RGB Values: 
+/* WTM HH Color Palette: Hex Values - RGB Values: 
 White: #fff - rgb(255, 255, 255);
 Gray: #666 - rgb(102, 102, 102);
 Black: #000 - rgb(0, 0, 0);
@@ -12,51 +12,30 @@ Dark Blue: #4285F4 - rgb(66, 133, 244);
 
 
 /*  =============================================================================
-    CSS RESETS  
+    BASE STYLES 
     ============================================================================= */
 
-/* CSS RESETS are a set of CSS rules that resets the styling of all HTML elements to a consistent baseline in all browsers. Every browser has its own default 'user agent' stylesheet, and we need to normalize all that CSS. */
+/* BASE STYLES are a set of CSS rules that will be applied into desired global HTML elements via CSS selectors (element type selectors/HTML elements or class selectors). */
 
 * {
-/*
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;  
-*/  
+    
 }
 
 html,
 body {
-/*
-    width: 100%;
-    height: 100%;
-*/
+
 }
 
 body {
-/*
-    background: #fff;
-    color: #000; 
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 2;
-*/
+
 }
 
 .figure {
-/*
-    margin: 0;
-    padding: 0;
-*/
+
 }
 
 img {
-/*
-    border: 0; 
-    vertical-align: middle;
-    outline: none;
-*/
+
 }
 
 
@@ -68,71 +47,52 @@ img {
 /* UTILITY - HTML ELEMENTS are a set of CSS rules that will be applied into certain CSS selectors that are commonly used through each HTML document. By grouping them into this module and styling them once, we'll facilite the workflow of re-using such CSS selectors (class selectors or element type selectors/HTML elements) and avoiding the need of style them over and over again. */
 
 a {
-/*
-    border-color: #666;
-    border-bottom: 1px solid rgba(102, 102, 102, 0.3); 
-    color: #666; 
-    outline: 0;
-    text-decoration: none;
-    -webkit-transition: color 0.1s linear, border 0.2s linear; 
-    transition: color 0.1s linear, border 0.2s linear;
-*/
+
 }
 
 a:hover,
 a:focus {
-/*
-    border-color: #1CE9B6;
-    border-color: rgba(28, 233, 182, 0.2);
-*/
+
 }
 
 a:hover,
 a:focus,
 li:nth-child(odd) a:hover,
 li:nth-child(odd) a:focus {
-/*     color: #00BFA5; */
+
 }
 
 li:nth-child(even) a:hover,
 li:nth-child(even) a:focus {
-/*     color: #1CE9B6;  */
+
 }
 
 .h1, .h2, .h3, .h4, .cite {
-/*
-    color: #666; 
-    font-weight: 100;
-    line-height: 1.1;  
-*/
+
 }
 
 .h2 {
-/*     font-size: 54px; */
+
 }
 
 .h3,
 .cite {
-/*
-    font-size: 28px;
-    margin-bottom: 20px;
-*/
+
 }
 
 .h4 {
-/*
-    font-size: 20px;
-    margin-bottom: 20px;
-*/
+
 }
 
 .cite {
-/*     font-style: normal; */
+
 }
+
+/*  MEDIA QUERIES - BREAKPOINT: Device has a maximal width of 768 pixels */
 
 @media only screen and (max-width: 768px) {
     .h2 {
-/*         font-size: 44px; */
+
     }
 }
 
@@ -142,10 +102,10 @@ li:nth-child(even) a:focus {
     HELPER CLASSES  
     ============================================================================= */
 
-/* HELPER CLASSES are a set of CSS rules that will be applied into certain classes that are created to perform a certain desired style for an HTML element. The advantage of creating them is that we'll be able to re-use those classes as much as we need to in any HTML element that we'll like. We'll avoid repeating those styling properties in our CSS, and create a much smaller CSS file. These classes can be used inside a <h1 class="helper-class"></h1> tag, a <div class="helper-class"></div> tag, an <img class="helper-class"> tag, etc. */
+/* HELPER CLASSES are a set of CSS rules that will be applied into certain classes that are created to perform an specific style for an HTML element. The advantage of creating them is that we'll be able to re-use those classes as much as we need to in any HTML element that we'll like. We'll avoid repeating those styling properties in our CSS, and create a much smaller CSS file. These classes can be used inside a <h1 class="helper-class"></h1> tag, a <div class="helper-class"></div> tag, an <img class="helper-class"> tag, etc. */
      
 .img--responsive {
-
+  
 }
 
 .img--circle {
@@ -160,6 +120,8 @@ li:nth-child(even) a:focus {
 
 }
 
+/*  MEDIA QUERIES - BREAKPOINT: Device has a maximal width of 768 pixels */
+
 @media only screen and (max-width: 768px) {
     .visible-mobile {
 
@@ -172,66 +134,57 @@ li:nth-child(even) a:focus {
     GENERAL STYLES  
     ============================================================================= */
 
-/* GENERAL STYLES are a set of CSS rules that will applied into certain CSS selectors that are created to perform a standard style desired for an HTML element. Similarly to the Helper Classes, the General Styles contains class selectors that can be re-used in our HTML elements, again, to avoid repetition. But element type selectors (HTML elements) can also be clasified into this category, as opposed to the Helper Classes. */
+/* GENERAL STYLES are a set of CSS rules that will applied into certain global CSS selectors that are created to perform a standard style desired for an HTML element. Similarly to the Helper Classes, the General Styles contains class selectors that can be re-used in our HTML elements, again, to avoid repetition. But element type selectors (HTML elements) can also be clasified into this category, as opposed to the Helper Classes. */
 
 .wrapper {
-/*
-    height: 100%;
-    padding: 0 25px;
-*/
+
 }    
 
 .sec--content {
-/*
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 120px;
-*/
+
 }
 
 .sec--content .h2 {
-/*     color: #4285F4;  */
+
 }
 
 .sec--content ul {
-/*     list-style-type: square;     */
+
 }
 
 .sec--content ul li {
-/*
-    margin-bottom: 10px;  
-    margin-left: 18px; 
-*/ 
+     
 }
 
 .sec--content ul li:nth-child(odd) {
-/*     color: #4285F4;  */
+
 }
 
 .sec--content ul li:nth-child(even) {
-/*     color: #4FC3F7;  */
+
 }
 
 .sec--content .h2 {
-/*     margin-bottom: 60px; */
+
 }
 
 .col {
-/*     padding: 25px; */
+
 }
 
 .job-title {
-/*     font-size: 20px;   */
+
 }
 
 .footer--blockquote {
-/*     margin-top: 20px; */
+
 }
+
+/*  MEDIA QUERIES - BREAKPOINT: Device has a minimal width of 769 pixels */
 
 @media only screen and (min-width: 769px) {
     .sec--content .wrapper {
-/*         padding: 0 35px; */
+
     }
 }
 
@@ -243,82 +196,32 @@ li:nth-child(even) a:focus {
 
 /* HEADER & NAVIGATION STYLES are a set of CSS rules that will be applied inside the header and navigation HTML elements via CSS selectors (class selectors or element type selectors/HTML elements) already defined in each HTML element that needs styling to match our template. */
 
-
-/* LOGO AND NAVIGATION */
-
 .header {
 
 }
 
-.logo {
+/* LOGO */
 
+.logo {
+ 
 }
 
 .logo a {
-/*
-    width: 189px;
-    height: 60px;
-    background-image: url("../img/wtm-logo.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: 189px 60px;
-    border: 0;
-    display: inline-block;
-    float: left;
-    font: 0/0 a;
-    margin-right: 20px;
-    vertical-align: middle;
-    -webkit-transition: transform 0.1s linear; 
-    transition: transform 0.1s linear;
-*/
+
 }
 
 .logo a:hover,
 .logo a:focus {
-/*
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    -webkit-transform: scale(0.9); 
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
-*/
-}
-
-.menu {
-/*
-    cursor: pointer;
-    float: right;
-    margin-right: 15px;
-    -webkit-transform: translateY(20px);
-    -ms-transform: translateY(20px);
-    transform: translateY(20px);
-*/
-}
-
-.nav-trigger {
 
 }
+
+/* NAVIGATION */
 
 .nav ul {
-/*
-    list-style-type: none;
-    -webkit-transform: translateY(16px);
-    -ms-transform: translateY(16px);
-    transform: translateY(16px);
-*/
+
 }
 
 .nav ul li {
-
-}
-
-.menu,
-.nav a {
-
-}
-
-.menu:hover,
-.menu:focus {
 
 }
 
@@ -326,36 +229,40 @@ li:nth-child(even) a:focus {
 
 }
 
+/* MOBILE NAVIGATION BUTTON */
+
+.menu--open {
+
+}
+
+.menu--open:hover,
+.menu--open:focus {
+
+}
+
+.menu--close {
+
+}
+
+/* MOBILE NAVIGATION BUTTON & NAVIGATION LINKS */
+
+.menu--open,
+.nav a {
+
+}
+
+/*  MEDIA QUERIES - BREAKPOINT: Device has a maximal width of 768 pixels */
+    
 @media only screen and (max-width: 768px) {
+    
+    /* NAVIGATION */
+    
     .nav {
-/*
-        width: 256px;
-        height: 100%;
-        backface-visibility: hidden;
-        background-color: #fff;
-        overflow: auto;
-        position: fixed;
-        z-index: 100;
-        top: 0;
-        left: 0;
-        visibility: hidden;
-        -webkit-transition: all 0.5s; 
-        transition: all 0.5s;
-        -webkit-transform: translateX(-100%); 
-        -ms-transform: translateX(-100%); 
-        transform: translateX(-100%);
-*/
+
     }
     
     .nav ul {
-/*
-        width: 95%;
-        line-height: 20px;
-        margin: 70px 0 0 13px;
-        -webkit-transform: translateY(0); 
-        -ms-transform: translateY(0);
-        transform: translateY(0);
-*/
+
     }
     
     .nav ul li {
@@ -369,15 +276,16 @@ li:nth-child(even) a:focus {
     .nav a.active {
 
     }
+    
+    /* CSS Magic - Let's Open that Mobile Navigation */
+    .nav:target {
+  
+    }
+    
+    /* MOBILE NAVIGATION BUTTON */
 
-    /* CSS Magic - Open the Mobile Navigation when the hidden checkbox is checked */
-    .nav-trigger:checked + .nav {
-/*
-        visibility: visible;
-        -webkit-transform: translateX(0); 
-        -ms-transform: translateX(0);
-        transform: translateX(0); 
-*/
+    .nav:target + .menu--close {
+
     }
 }
 
@@ -389,41 +297,30 @@ li:nth-child(even) a:focus {
 
 /* HOME PAGE STYLES are a set of CSS rules that will be applied to our index.HTML page via CSS selectors (class selectors or element type selectors/HTML elements) already defined in each HTML element that needs styling to match our template. */
 
-.main--hero {
+.main--home {
 
 }
 
-.sec--hero {
+.sec--home {
 
 }
 
-.sec--hero .section {
-/*
-    width: 100%;
-    background-color: #fff; 
-    background-color: rgba(255,255,255, 0.9); 
-    padding: 20px 12px 12px;
-    position: relative;
-    top: 50%;
-    left: 0;
-    text-align: center;
-    -webkit-transform: translateY(-40%);
-    -ms-transform: translateY(-40%);
-    transform: translateY(-40%);
-*/
-}
-
-.sec--hero__logo {
+.sec--home .section {
 
 }
 
-.sec--hero .h2 {
+.sec--home__logo {
 
 }
 
+/*  MEDIA QUERIES - BREAKPOINT: Device has a minimal width of 769 pixels */
     
 @media only screen and (min-width: 769px) {
-    .sec--hero__logo {
+    .sec--home__logo {
+
+    }
+    
+    .sec--home .h2 {
 
     }
 }
@@ -478,12 +375,14 @@ li:nth-child(even) a:focus {
 }
 
 .sec--community li:not(:last-of-type) {
-    
+
 }
 
 .sec--community .col--last {
 
 }
+
+/*  MEDIA QUERIES - BREAKPOINT: Device has a maximal width of 768 pixels */
 
 @media only screen and (max-width: 768px) {   
     .sec--community .figure {
@@ -506,6 +405,8 @@ li:nth-child(even) a:focus {
 .sec--mentors article:not(:last-of-type) {
 
 }
+
+/*  MEDIA QUERIES - BREAKPOINT: Device has a maximal width of 768 pixels */
 
 @media only screen and (max-width: 768px) {   
     .sec--mentors .col {
