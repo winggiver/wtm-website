@@ -1,11 +1,10 @@
-# wth-website
-Site template for Women Techmakers Hamburg.
+# Women Techmakers HH Site Template
 
-This is the first website for the Women Techmakers Hamburg group.
+First website for the Women Techmakers Hamburg Group.
 
 ##Questions?
 
-Reach out to the front end developers working on this template.
+Reach out to the front end devs working on this template.
 
 ilithya --> https://github.com/ilithya
 
@@ -23,8 +22,8 @@ Author --> Graham Miller --> http://grahamrobertsonmiller.co.uk/
 
 ##Hamburg Photos
 
-Photos from the city of Hamburg were provided by WTH admins and members.
+Photos from the city of Hamburg by WTM lead and member.
 
-WTH Admin --> Anja Schumann
+WTM Lead --> Anja Schumann
 
-WTH Member --> Simla K&uuml;&ccedil;&uuml;ksayan
+WTM Member --> Simla K&uuml;&ccedil;&uuml;ksayan
