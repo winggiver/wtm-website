@@ -173,6 +173,7 @@ li:nth-child(even) a:focus {
 
 .sec--content .h2 {
     color: #4285F4; /* Dark Blue */
+    margin-bottom: 60px;
 }
 
 .sec--content ul {
@@ -190,10 +191,6 @@ li:nth-child(even) a:focus {
 
 .sec--content ul li:nth-child(even) {
     color: #4FC3F7; /*  Blue */ 
-}
-
-.sec--content .h2 {
-    margin-bottom: 60px;
 }
 
 .col {
