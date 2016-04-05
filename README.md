@@ -1,13 +1,13 @@
 # wth-website
 Site template for Women Techmakers Hamburg.
 
-This is the template website for the HTML & CSS Workshops.
+Material for the HTML & CSS Workshops.
 
-This template shall be downloaded by all MENTORS in the workshop.
+MENTORS template.
 
 ##Questions?
 
-Reach out to the front end developers working on this template.
+Reach out to the front end devs working on this template.
 
 ilithya --> https://github.com/ilithya
 
@@ -25,7 +25,7 @@ Author --> Graham Miller --> http://grahamrobertsonmiller.co.uk/
 
 ##Hamburg Photos
 
-Photos from the city of Hamburg were provided by WTM lead and members.
+Photos from the city of Hamburg by WTM lead and member.
 
 WTM Lead --> Anja Schumann
 
