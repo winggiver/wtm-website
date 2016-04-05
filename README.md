@@ -1,4 +1,4 @@
-# Women Techmakers Hamburg Site Template
+# Women Techmakers HH Site Template
 
 Material for the HTML & CSS Workshops.
 
