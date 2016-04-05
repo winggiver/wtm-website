@@ -3,7 +3,7 @@ Site template for Women Techmakers Hamburg.
 
 Material for the HTML & CSS Workshops.
 
-MENTORS template.
+MENTORS template updated April 5, 2016.
 
 ##Questions?
 
