@@ -1,7 +1,7 @@
 # wth-website
 Site template for Women Techmakers Hamburg.
 
-This is the template website for the WTM HH first workshop.
+This is the template website for the HTML & CSS Workshops.
 
 This template shall be downloaded by all MENTORS in the workshop.
 
