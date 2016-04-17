@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
      *  We assign a function to the window.onscroll Event.
      *  The function checks whether the property window.scrollY 
      *  ( = how far we have scrolled down from the top) is greater than 100px.
-     *  If this is the case we add the class "is-full-opacity" to our scroll button.
+     *  If this is the case we add the class "is-visible" to our scroll button.
      *  This class will ensure that the button is visible by setting its opacity to 40%.
      *  If window.scrollY returns a value below 100 we remove the class again, so that
      *  the button becomes invisible again (since its opacity is set to 0).
