@@ -12,6 +12,8 @@ ilithya --> https://github.com/ilithya
 
 Steffi --> https://github.com/stefaniestoppel
 
+Phillip --> https://github.com/TheAmazingPT
+
 ##Framework
 
 We're using a small responsive framework to build this template.
