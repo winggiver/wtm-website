@@ -6,7 +6,10 @@
  * The DOMContentLoaded event fires when the html document has been loaded and parsed, 
  * but before any stylesheets or images are finished loading.
 */
+
 document.addEventListener("DOMContentLoaded", function() {
+    
+// Let's define our variables first
     
     // Scroll button
     var scrollButton = document.getElementById( "scroll" );
@@ -21,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Change this value and see what happens!
     var intervalDuration = 10;
 
+// Let's start building our functions
+
     //------todo: add description
     function scrollToTop() {
         intervalId = setInterval( scrollStep, intervalDuration );
@@ -31,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Check whether the window has scrolled to the top.
         // If so, call scrollStop() to clear the interval and write to the console.
         if( window.scrollY === 0 ) {
-            console.log("Scroll to top");
+            console.log("Scroll to top"); // We tell the console to display this text in order to test our boolean function
             scrollStop();
         }
         // Call the function window.scroll(x, y) and 
@@ -55,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
      *  We assign a function to the window.onscroll Event.
      *  The function checks whether the property window.scrollY 
      *  ( = how far we have scrolled down from the top) is greater than 100px.
-     *  If this is the case we add the class "opacity-40" to our scroll button.
+     *  If this is the case we add the class "is-full-opacity" to our scroll button.
      *  This class will ensure that the button is visible by setting its opacity to 40%.
      *  If window.scrollY returns a value below 100 we remove the class again, so that
      *  the button becomes invisible again (since its opacity is set to 0).
@@ -63,10 +68,10 @@ document.addEventListener("DOMContentLoaded", function() {
     window.onscroll = function() {
         if( window.scrollY > 100 ) {
             // Make scroll button visible
-            scrollButton.classList.add("opacity-40");
+            scrollButton.classList.add("is-full-opacity");
         } else { 
             // Make scroll button invisible
-            scrollButton.classList.remove("opacity-40");
+            scrollButton.classList.remove("is-full-opacity");
         }
     }
 });
