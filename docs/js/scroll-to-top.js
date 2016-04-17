@@ -68,10 +68,10 @@ document.addEventListener("DOMContentLoaded", function() {
     window.onscroll = function() {
         if( window.scrollY > 100 ) {
             // Make scroll button visible
-            scrollButton.classList.add("is-full-opacity");
+            scrollButton.classList.add("is-visible");
         } else { 
             // Make scroll button invisible
-            scrollButton.classList.remove("is-full-opacity");
+            scrollButton.classList.remove("is-visible");
         }
     }
 });
