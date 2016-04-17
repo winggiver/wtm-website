@@ -320,11 +320,10 @@ button {
     transition: all 0.5s;
 }
 
-/* MOBILE NAVIGATION BUTTON, NAVIGATION LINKS & SCROLL TO TOP BUTTON */
+/* MOBILE NAVIGATION BUTTON & NAVIGATION LINKS */
 
 .menu--open,
-.nav a,
-.scroll {
+.nav a {
     border: 0;
     font-size: 13px;
     font-weight: 500;
@@ -582,13 +581,18 @@ button {
 
 .scroll {
     background-color: #1CE9B6; /* Green */
+    border: 0;
     color: white;
+    font-size: 30px;
     filter: alpha(opacity=0); /* IE 8 */
     opacity: 0;
-    padding: 8px 16px;
+    padding: 0 30px;
     position: fixed;
     bottom: 10px;
     right: 10px;
+    -webkit-transform: rotate(180deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(180deg);  /* IE 9 */
+    transform: rotate(180deg); 
     -webkit-transition: all .4s ease-in-out; /* Chrome, Safari, Opera */
     transition: all .4s ease-in-out; 
 }
