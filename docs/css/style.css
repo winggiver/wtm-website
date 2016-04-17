@@ -86,7 +86,7 @@ li:nth-child(even) a:focus {
 }
 
 button {
-    outline: none;    
+    outline: none;
 }
 
 .h1, .h2, .h3, .h4, .cite {
@@ -592,9 +592,9 @@ button {
     right: 10px;
     -webkit-transform: rotate(180deg);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: rotate(180deg);  /* IE 9 */
-    transform: rotate(180deg); 
+    transform: rotate(180deg);
     -webkit-transition: all .4s ease-in-out; /* Chrome, Safari, Opera */
-    transition: all .4s ease-in-out; 
+    transition: all .4s ease-in-out;
 }
 
 .is-visible {
