@@ -1,12 +1,22 @@
+// A global variable, for accesing the interval
 let countdown;
 
+// The two HTML DOM nodes for the countdown text and the countdown time
 const $countdownText = document.querySelector('.section__countdown__text');
 const $countdownTime = document.querySelector('.section__countdown__time');
 
+/**
+ * Initialize the countdown, which should be updated in a one second interval
+ */
 function initializeCountdown() {
   countdown = setInterval(renderCountdown, 1000);
 }
 
+/**
+ * Get the date for the upcoming event and the current date,
+ * calculate the date difference and pass this difference
+ * for creating the text strings for the HTML.
+ */
 function renderCountdown() {
   const currentDate = new Date();
   const nextEventDate = new Date('May 04 2016 19:00:00 GMT+0100 (CEST)');
@@ -15,6 +25,12 @@ function renderCountdown() {
   getCountdownTimeString(dateDifference);
 }
 
+/**
+ * Get the text strings for the countdown text and time.
+ * @param {Date} date
+ *    The date difference between the current date
+ *    and the date of the upcoming event
+ */
 function getCountdownTimeString(date) {
   let days = date.getDate();
   let hours = date.getHours();
@@ -39,8 +55,11 @@ function getCountdownTimeString(date) {
     clearInterval(countdown);
   }
 
+  // Finally write the respective text strings to the HTML
   $countdownText.textContent = countdownText;
   $countdownTime.textContent = countdownTime;
 }
 
+// As soon as the scripts is fully loaded by the browser,
+// this function should be immediately called for starting the countdown
 initializeCountdown();
