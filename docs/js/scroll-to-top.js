@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // Let's define our variables first
     
     // Scroll button
-    var scrollButton = document.getElementById( "scroll" );
+    var scrollLink = document.getElementById( "scroll" );
 
     // Duration and amount of steps of scroll animation
     var scrollHeight = 50; // 50px step scrolling
@@ -52,7 +52,10 @@ document.addEventListener("DOMContentLoaded", function() {
      * Add a click event listener to the scroll button
      * which will trigger the scrollToTop() function 
      **/
-    scrollButton.addEventListener( "click", function() {
+    scrollLink.addEventListener( "click", function(e) {
+        // We have to prevent the link's default behaviour to
+        // stop the page jumping to the top right away when the link is clicked.
+        e.preventDefault();
         scrollToTop();
     });
 
@@ -68,10 +71,10 @@ document.addEventListener("DOMContentLoaded", function() {
     window.onscroll = function() {
         if( window.scrollY > 100 ) {
             // Make scroll button visible
-            scrollButton.classList.add("is-visible");
+            scrollLink.classList.add("is-visible");
         } else { 
             // Make scroll button invisible
-            scrollButton.classList.remove("is-visible");
+            scrollLink.classList.remove("is-visible");
         }
     }
 });
