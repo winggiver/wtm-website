@@ -143,6 +143,7 @@ li:nth-child(even) a:focus {
     display: none !important;
 }
 
+
 /*  MEDIA QUERIES - BREAKPOINT: Device has a maximal width of 768 pixels */
 
 @media only screen and (max-width: 768px) {
@@ -568,7 +569,54 @@ li:nth-child(even) a:focus {
     }
 }
 
+/*  =============================================================================
+    STICKY BACK-TO-TOP BUTTON STYLES
+    ============================================================================= */
 
+.scroll {
+    width: 50px;
+    height: 50px;
+    background-color: #1CE9B6;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #1CE9B6;
+    box-shadow: 3px 3px 10px #666;
+    border-radius: 5px;
+    font-size: 24px;
+    color: white;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.scroll:hover {
+    color: #00BFA5;
+}
+
+.scroll:focus {
+    outline: none;
+}
+
+.scroll p{
+    -webkit-transform: rotate(180deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(180deg);  /* IE 9 */
+    transform: rotate(180deg);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.opacity-40 { 
+    filter: alpha(opacity=0.4);
+    opacity: 0.4;
+}
+
+.opacity-40:hover {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
 
 /*  =============================================================================
     FOOTER STYLES
