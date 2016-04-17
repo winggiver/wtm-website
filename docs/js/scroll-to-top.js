@@ -4,7 +4,7 @@
 
 // Let's define our variables first
 // A global variable, for accesing the interval
-let scrollVertical = 0;
+var scrollVertical = 0;
 
 // Another global variable
 const $scrollLink = document.querySelector('.scroll');

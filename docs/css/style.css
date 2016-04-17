@@ -431,30 +431,20 @@ button {
     text-align: center;
 }
 
-.section__countdown {
-    margin-top: 30px;
-    text-align: center
-}
-
-.section__countdown__text, .section__countdown__time {
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.9);
-    text-shadow: 1px 1px 3px #000;
-}
-
-.section__countdown__time {
-    font-size: 32px;
-    margin-top: 10px;
-    line-height: 32px;
-    text-transform: uppercase;
-    /* letter-spacing: -2px; */
-}
-
 .sec--home__logo {
     display: inline-block;
     padding-bottom: 30px;
+}
+
+.countdown__text {
+    color: #4285F4; /* Dark Blue */
+    display: inline-block;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.countdown__time {
+    display: inline-block;
 }
 
 /*  MEDIA QUERIES - BREAKPOINT: Device has a minimal width of 769 pixels */
@@ -466,7 +456,14 @@ button {
 
     .sec--home .h2 {
         display: inline-block;
-        margin-top: 40px;
+    }
+}
+
+/*  MEDIA QUERIES - BREAKPOINT: Device has a maximal width of 768 pixels */
+
+@media only screen and (max-width: 768px) {
+    .countdown {
+        margin-top: 30px;
     }
 }
 
