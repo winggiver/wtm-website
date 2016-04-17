@@ -1,42 +1,47 @@
-/** Scroll to top implementation in vanilla JavaScript **/
+/** Scroll to Top implementation in vanilla JavaScript **/
 
-// ilithya's convertion into ECMAScript6 - trying... not the best, I guess.
-
+// ilithya's convertion from Steffi's original code into ECMAScript6 - trying... not the best, I guess.
 
 // Let's define our variables first
+// A global variable, for accesing the interval
+let scrollVertical = 0;
+
+// Another global variable
 const $scrollLink = document.querySelector('.scroll');
-const scrollHeight = 50;
-const intervalId = 0;
-const intervalDuration = 0;
 
 // Let's start building our functions
 function triggerScrollBtn() {
     toggleScrollBtn();
     
-    $scrollLink.addEventListener('click', function() {
+    $scrollLink.addEventListener('click', function(e) {
+        e.preventDefault();
         scrollToTop();
     });
 }
 
 function toggleScrollBtn() {
     window.onscroll = function() {
-        window.scrollY > 100 ? $scrollLink.classList.add("is-visible") : $scrollLink.classList.remove("is-visible");
+        window.scrollY > 100 ? $scrollLink.classList.add('is-visible') : $scrollLink.classList.remove('is-visible');
     }    
 }
 
 function scrollToTop() {
-    intervalId = setInterval(scrollStep, intervalDuration);
+    const intervalDuration = 10;
+
+    scrollVertical = setInterval(scrollStep, intervalDuration);
 }
 
 function scrollStep() {
+    const scrollHeight = 50;
+    
     if (window.scrollY === 0) {
-        clearInterval(intervalId);
+        clearInterval(scrollVertical);
     }
     
     window.scroll(0, window.scrollY - scrollHeight);
 }
 
-// As soon as the scripts is fully loaded by the browser,
+// As soon as the script is fully loaded by the browser,
 // this function should be immediately called for trigering the Scroll to Top Button
 triggerScrollBtn();
 
