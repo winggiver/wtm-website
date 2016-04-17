@@ -41,7 +41,7 @@ function getCountdownTimeString(date) {
 
   if (date.getTime() >= 0) {
     days = days < 2 ? `${days} day, ` : `${days} days, `;
-    hours = hours < 2 ? `${hour} hour and ` : `${hours} hours, `;
+    hours = hours < 2 ? `${hours} hour and ` : `${hours} hours, `;
     minutes = minutes < 2 ? `${minutes} minute and` : `${minutes} minutes and `;
     seconds = seconds < 2 ? `${seconds} second` : `${seconds} seconds`;
     countdownText = `The next event will be in`;
