@@ -1,9 +1,15 @@
+/** Counter implementation in vanilla JavaScript (ES6 - ECMAScript 6) **/
+
+// Let's define our variables first:
+
 // A global variable, for accesing the interval
 let countdown;
 
 // The two HTML DOM nodes for the countdown text and the countdown time
 const $countdownText = document.querySelector('.countdown__text');
 const $countdownTime = document.querySelector('.countdown__time');
+
+// Let's start building our functions:
 
 /**
  * Initialize the countdown, which should be updated in a one second interval
