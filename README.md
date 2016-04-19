@@ -2,7 +2,7 @@
 
 Material for the HTML & CSS Workshops.
 
-MENTORS template updated April 5, 2016.
+MENTORS template updated April 19, 2016.
 
 ##Questions?
 
