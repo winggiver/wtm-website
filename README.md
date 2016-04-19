@@ -1,6 +1,6 @@
 # Women Techmakers HH Site Template
 
-Material for the HTML & CSS Workshops.
+Material for the HTML, CSS & JS Workshops.
 
 MENTORS template updated April 19, 2016.
 
