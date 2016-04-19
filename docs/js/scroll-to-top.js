@@ -34,7 +34,7 @@ function scrollToTop() {
 function scrollStep() {
     const scrollHeight = 50;
     
-    if (window.scrollY >= 0) {
+    if (window.scrollY === 0) {
         clearInterval(scrollVertical);
     }
     
