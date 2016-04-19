@@ -12,7 +12,7 @@ ilithya --> https://github.com/ilithya
 
 Steffi --> https://github.com/stefaniestoppel
 
-Phillip --> https://github.com/TheAmazingPT
+Philipp --> https://github.com/TheAmazingPT
 
 ##Framework
 
