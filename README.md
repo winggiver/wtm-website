@@ -1,8 +1,8 @@
 # Women Techmakers HH Site Template
 
-Material for the HTML & CSS Workshops.
+Material for the HTML, CSS & JS Workshops.
 
-PARTICIPANTS template updated April 5, 2016.
+PARTICIPANTS template updated April 19, 2016.
 
 ##Questions?
 
@@ -11,6 +11,8 @@ Reach out to the front end devs working on this template.
 ilithya --> https://github.com/ilithya
 
 Steffi --> https://github.com/stefaniestoppel
+
+Phillip --> https://github.com/TheAmazingPT
 
 ##Framework
 
