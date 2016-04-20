@@ -25,10 +25,10 @@ function initScrollToTop() {
     
     /**
      * Add an event listener to the element representing our browser window.
-     * The event listener will trigger the function toggleScrollLinkOpague() 
+     * The event listener will trigger the function toggleScrollLinkOpaque() 
      * on scrolling up or down inside the window.
      **/
-    window.addEventListener('scroll', toggleScrollLinkOpague);
+    window.addEventListener('scroll', toggleScrollLinkOpaque);
     
     /**
      * Add a click event listener to the scroll link element. 
@@ -84,7 +84,7 @@ function scrollToTop() {
  *  If the property window.scrollY returns a value below 100 we remove the class again, so that
  *  the button becomes invisible (since its opacity is set to 0).
  **/
-function toggleScrollLinkOpague() {
+function toggleScrollLinkOpaque() {
     if (window.scrollY > 100) {
         // Make scroll button visible by adding class
         $scrollLink.classList.add('is-visible');
