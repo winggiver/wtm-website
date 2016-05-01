@@ -25,7 +25,7 @@ function initializeCountdown() {
  */
 function renderCountdown() {
   const currentDate = new Date();
-  const nextEventDate = new Date('May 04 2016 19:00:00 GMT+0100 (CEST)');
+  const nextEventDate = new Date('June 01 2016 19:00:00 GMT+0100 (CEST)');
   const dateDifference = new Date(nextEventDate - currentDate);
 
   getCountdownTimeString(dateDifference);
