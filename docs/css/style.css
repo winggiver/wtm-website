@@ -147,6 +147,11 @@ button {
     display: none !important;
 }
 
+.transition-all {
+    -webkit-transition: all 0.5s ease-in-out; /* Chrome, Safari, Opera */
+    transition: all 0.5s ease-in-out;
+}
+
 
 /*  MEDIA QUERIES - BREAKPOINT: Device has a maximal width of 768 pixels */
 
@@ -274,9 +279,7 @@ button {
 
 .nav ul {
     list-style-type: none;
-    -webkit-transform: translateY(16px); /* Chrome, Safari, Opera */
-    -ms-transform: translateY(16px); /* IE9 */
-    transform: translateY(16px);
+    padding-top: 16px;
 }
 
 .nav ul li {
@@ -294,10 +297,8 @@ button {
 .menu--open {
     cursor: pointer;
     float: right;
+    margin-top: 20px;
     margin-right: 15px;
-    -webkit-transform: translateY(20px); /* Chrome, Safari, Opera */
-    -ms-transform: translateY(20px); /* IE9 */
-    transform: translateY(20px);
 }
 
 .menu--open:hover,
@@ -316,8 +317,6 @@ button {
     text-align: center;
     right: -80px; /* 40px; */
     top: 0;
-    -webkit-transition: all 0.5s; /* Chrome, Safari, Opera */
-    transition: all 0.5s;
 }
 
 /* MOBILE NAVIGATION BUTTON & NAVIGATION LINKS */
@@ -346,22 +345,14 @@ button {
         position: fixed;
         z-index: 100;
         top: 0;
-        left: 0;
+        left: -100%;
         visibility: visible;
-        -webkit-transition: all 0.5s; /* Chrome, Safari, Opera */
-        transition: all 0.5s;
-        -webkit-transform: translateX(-100%); /* Chrome, Safari, Opera */
-        -ms-transform: translateX(-100%); /* IE9 */
-        transform: translateX(-100%);
     }
 
     .nav ul {
         width: 95%;
         line-height: 20px;
         margin: 70px 0 0 13px;
-        -webkit-transform: translateY(0); /* Chrome, Safari, Opera */
-        -ms-transform: translateY(0); /* IE9 */
-        transform: translateY(0);
     }
 
     .nav ul li {
@@ -380,9 +371,7 @@ button {
 
     /* CSS Magic - Let's Open that Mobile Navigation */
     .nav:target {
-        -webkit-transform: translateX(0); /* Chrome, Safari, Opera */
-        -ms-transform: translateX(0); /* IE9 */
-        transform: translateX(0);
+        left: 0;
     }
 
     /* MOBILE NAVIGATION BUTTON */
@@ -592,8 +581,6 @@ button {
     -webkit-transform: rotate(180deg);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: rotate(180deg);  /* IE 9 */
     transform: rotate(180deg);
-    -webkit-transition: all .4s ease-in-out; /* Chrome, Safari, Opera */
-    transition: all .4s ease-in-out;
 }
 
 .is-visible {
